@@ -15,4 +15,7 @@
 | 2 - Wed     | 08/05/2024      |     4.0             |   Research             | <ul><li> Investigatig about functional data and downloading some books/articles from UBCO online library.</li></ul>   |
 | 2 - Thu     | 09/05/2024      |     1.0             |   Meeting with Siemens advisory commitment| <ul><li>Presenting our proposal online</li></ul>   |
 | 2 - Thu     | 09/05/2024      |     3.0             |   Coding               | <ul><li> Modifying Nan's code to extract time series from the cal/sample window for sensor B and adding some plots like histograms to visualize start cal/sample windows distribution, and line plots for the time series.</li></ul>   |
-
+| 3 - Mon     | 13/05/2024      |     0.5             |   Proposal              | <ul> Modifying the proposal to add Functional Data Analysis (FDA) and double checking the coherence of the dataset section according to my peers revision.<li> </li></ul>   |
+| 3 - Mon     | 13/05/2024      |     3.0             |   Research             | <ul><li> Reading about time-series clustering ans sharing the papers I found with my teamates. Investigating what packages are suitable for functional data analysis.</li></ul>   |
+| 3 - Mon     | 13/05/2024      |     3.0             |   Coding               | <ul><li> Replicating examples from scikit-fda to better understand FDA, functional regression, functional principal component analysis (FPCA), data exploration and computation of derivarives in Python.</li></ul>   |
+| 3 - Mon     | 13/05/2024      |     1.0             |   Internal meeting     | <ul><li> Discussing about the activities of week 3.</li></ul>   |
