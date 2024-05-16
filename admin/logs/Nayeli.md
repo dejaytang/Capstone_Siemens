@@ -19,3 +19,7 @@
 | 3 - Mon     | 13/05/2024      |     3.0             |   Research             | <ul><li> Reading about time-series clustering ans sharing the papers I found with my teamates. Investigating what packages are suitable for functional data analysis.</li></ul>   |
 | 3 - Mon     | 13/05/2024      |     3.0             |   Coding               | <ul><li> Replicating examples from scikit-fda to better understand FDA, functional regression, functional principal component analysis (FPCA), data exploration and computation of derivarives in Python.</li></ul>   |
 | 3 - Mon     | 13/05/2024      |     1.0             |   Internal meeting     | <ul><li> Discussing about the activities of week 3.</li></ul>   |
+| 3 - Tue     | 13/05/2024      |     1.0             |   Meeting with faculty advisor     | <ul><li> Proposal draft final presentation with Cassie.</li></ul>   |
+| 3 - Tue     | 13/05/2024      |     6.0             |   Coding     | <ul><li> Exploring the use of Functional Data Analysis library in Python (skfda) with our data and reading paper and documentation for a better understanding. </li></ul>   |
+| 3 - Wed     | 13/05/2024      |     0.5             |   Coding    | <ul><li> Meeting with Eden to discuss FDA.</li></ul>   |
+| 3 - Wed     | 13/05/2024      |     6.0             |   Coding    | <ul><li> Cleaning and organizing the code for EDA on the original data and EDA on the window extraction data.</li></ul>   |
