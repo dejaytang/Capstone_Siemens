@@ -26,3 +26,5 @@
 | 3 - Thu     | 13/05/2024      |     1.0             |   Meeting with Jeff    | <ul><li> Meeting with Jeff Andrews and Eden to ask for suggestions about the FDA approach or any other techniques that can apply for our project.</li></ul>   |
 | 3 - Thu     | 13/05/2024      |     0.5             |   Coding    | <ul><li> I review peer's code on Functional One-Way ANOVA.</li></ul>   |
 | 3 - Thu     | 13/05/2024      |     5.0             |   EDA report    | <ul><li> I wrote the report about our findings from the EDA on the raw data.</li></ul>   |
+| 3 - Fri     | 13/05/2024      |     1.5             |   Internal meeting    | <ul><li> Discussion about missing values, clustering and Functional Principal Components before the meeting with Siemens.</li></ul>   |
+| 3 - Fri     | 13/05/2024      |     1.5             |   Meeting with Siemens | <ul><li> I write the minute of the day and ask about our findings on the EDA, especifically the different return codes.</li></ul>   |
