@@ -1,0 +1,13 @@
+Siemens Descriptive Analysis
+
+Index
+
+Loading the datasets
+Transposing the time series datasets
+Merging time series datasets to add additional features
+EDA on the whole time series
+EDA on Additional Features
+5.1. Date Features
+5.2. String Features
+5.3. Categorical Features
+5.4. Numeric Features
