@@ -11,3 +11,17 @@ EDA on Additional Features
 5.2. String Features
 5.3. Categorical Features
 5.4. Numeric Features
+
+
+Siemens Data Cleaning, Data Wrangling and EDA
+
+Index
+
+Loading the datasets
+Transposing the time series datasets
+Merging time series datasets to add additional features and delete unmatching testID
+Sensor B - Filtering by type of fluid to compute calibration/sample windows
+Window extraction
+Displaying time series from the window extraction
+EDA on time series from the window extraction
+Visualising the time series from the Cal/Sample windows
