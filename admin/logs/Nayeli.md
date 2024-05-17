@@ -24,5 +24,5 @@
 | 3 - Wed     | 13/05/2024      |     0.5             |   Coding    | <ul><li> Meeting with Eden to discuss FDA.</li></ul>   |
 | 3 - Wed     | 13/05/2024      |     6.0             |   Coding    | <ul><li> Cleaning and organizing the code for EDA on the original data and EDA on the window extraction data.</li></ul>   |
 | 3 - Thu     | 13/05/2024      |     1.0             |   Meeting with Jeff    | <ul><li> Meeting with Jeff Andrews and Eden to ask for suggestions about the FDA approach or any other techniques that can apply for our project.</li></ul>   |
-| 3 - Thu     | 13/05/2024      |     0.5             |   EDA report    | <ul><li> I review peer's code on Functional One-Way ANOVA.</li></ul>   |
+| 3 - Thu     | 13/05/2024      |     0.5             |   Coding    | <ul><li> I review peer's code on Functional One-Way ANOVA.</li></ul>   |
 | 3 - Thu     | 13/05/2024      |     5.0             |   EDA report    | <ul><li> I wrote the report about our findings from the EDA on the raw data.</li></ul>   |
