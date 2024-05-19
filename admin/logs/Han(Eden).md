@@ -134,12 +134,74 @@
     - Check code about data cleaning
   ------
 ## W3 Monday 2024/5/13
-- Time (hours): 1
+- Time (hours): 5
 - Activity Type: 
 	- Meeting
 	- Paper work
 - Description: 
 	- Internal meeting
+		- Discuss founding
 	- Amend proposal
+		- Add FDA part into proposal
+		- Amend grammar mistake of proposal
+		- 
+## W3 Tuesday 2024/5/14
+- Time (hours): 5
+- Activity Type: 
+	- Meeting
+	- Code
+- Description: 
+	- Instructor meeting
+		- Discuss founding
+	- FDA Code
+		- Learn FDA theory
+		- Implement FPCA code
 
+## W3 Wednesday 2024/5/15
+- Time (hours): 6
+- Activity Type: 
+	- Code
+- Description: 
+	- FDA Code
+		- Debug code
+		- Put FDA into more specific area
+
+## W3 Thursday 2024/5/16
+- Time (hours): 7
+- Activity Type: 
+	- Code
+	- Talk with professor
+- Description: 
+	- FDA Code(continue)
+		- Debug code
+		- Put FDA into more specific area
+	- Talk with professor Jeffery 
+		- The efficiency about the Clustering and FDA method
+		- The possible method for improvement
+	
+## W3 Friday 2024/5/17
+- Time (hours): 5
+- Activity Type: 
+	- Meeting
+	- Weekly Report
+- Description: 
+	- Client Meeting (6)
+		- Present the current founding 
+		- Asking questions
+		- Reschedule timetable
+	- Group Meeting
+		- Discuss the questions
+		- Show results
+	- Weekly Report
+		- Complement Weekly Report
+
+## W3 Sunday 2024/5/19
+- Time (hours): 2
+- Activity Type: 
+	- Weekly Report
+- Description: 
+	- Weekly Report
+		- Finish Weekly Report
   ------
+
+  
