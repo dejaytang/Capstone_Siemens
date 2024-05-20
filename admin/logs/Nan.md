@@ -54,44 +54,97 @@
     - Looked through all parts of proposal
     - Decided on questions that we would like to ask Siemens
 
-## Monday 2024/5/6
+## W2 Monday 2024/5/6
 - Time (hours): 1
 - Activity Type: Meeting with Siemens
 - Description: 
     - Went through all comments Levannia left in our proposal draft
     - Asked Siemens the questions we talked about yesterday
 
-## Monday 2024/5/6
+## W2 Monday 2024/5/6
 - Time (hours): 1.5
 - Activity Type: Worked on presentation slides
 - Description: 
     - Write the workflow and methodology part of slides
 
-## Tuesday 2024/5/7
+## W2 Tuesday 2024/5/7
 - Time (hours): 2
 - Activity Type: Meeting with faculty advisors
 - Description: 
     - Presented our proposal in a hybrid way
     - Assigned to stat group
 
-## Wednesday 2024/5/8
+## W2 Wednesday 2024/5/8
 - Time (hours): 1
 - Activity Type: Worked on updated slides
 - Description: 
     - Arranged and modified slides to highlight the methodology part for Siemens's need
 
-## Wednesday 2024/5/8
+## W2 Wednesday 2024/5/8
 - Time (hours): 1
 - Activity Type: Group meeting
 - Description: 
     - Reheasal our presentation and modifed some parts of slides
 
-## Thursday 2024/5/9
+## W2 Thursday 2024/5/9
 - Time (hours): 1
 - Activity Type: Meeting with Siemens advisory commitment
 - Description: 
     - Presented our proposal online
 
+## W2 Thursday 2024/5/9
+- Time (hours): 2
+- Activity Type: Coding on data preparation 
+- Description: 
+    - Arranged and modified code for preprocessing and cleaning data
+
+## W2 Friday 2024/5/10
+- Time (hours): 1.5
+- Activity Type: Coding on clustering
+- Description: 
+    - Tried to conduct euclidean clustering on window data
+
+## W3 Monday 2024/5/13
+- Time (hours): 1
+- Activity Type: Internal meeting
+- Description: 
+    - Discussed about next steps, including clustering and PCA
+
+## W3 Monday 2024/5/13
+- Time (hours): 2
+- Activity Type: Characteristics of sensor data
+- Description: 
+    - Tried to find any characteristics of sensor data
+
+## W3 Tuesday 2024/5/14
+- Time (hours): 2/3
+- Activity Type: Meeting with instructor
+- Description: 
+    - Presented proposal slides
+
+## W3 Wednesday 2024/5/15
+- Time (hours): 2
+- Activity Type: DTW clustering
+- Description: 
+    - Tried to conduct DTW clustering on window data
+
+## W3 Thursday 2024/5/16
+- Time (hours): 3
+- Activity Type: Summary of clustering 
+- Description: 
+    - Characterized clustering on sensor window data
+
+## W3 Friday 2024/5/17
+- Time (hours): 1.5
+- Activity Type: Internal meeting
+- Description: 
+    - Aligned our respective work and discussed problems about missing values
+
+## W3 Friday 2024/5/17
+- Time (hours): 1.5
+- Activity Type: Meeting with Siemens
+- Description: 
+    - Reported our updates on clustering and FDA
 
 
 
