@@ -12,13 +12,13 @@
 | 2           | 06/05/2024      |      1            |   Meeting with Client | <ul><li> Went over the draft proposal with Siemens and clarify the questions we asked
 | 2           | 06/05/2024      |      1.5            |   Individual Work | <ul><li> Work on the slides for presenting to the Faculty Advisor
 | 2           | 07/05/2024      |      1            |   Meeting with Faculty Advisors | <ul><li> Present the draft to Faculty Advisors
-| 2           | 08/05/2024      |      2            |   Individual Work | <ul><li> Updates the slides and practice presentation
+| 2           | 08/05/2024      |      2.5           |   Individual Work | <ul><li> Updates the slides and practice presentation
 | 2           | 08/05/2024      |      1            |   Internal Meeting | <ul><li> Rehersal the presentation to the client and updates the slides accordingly
 | 2           | 09/05/2024      |      1            |  Meeting with client | <ul><li> Presents to the Siemens advisory commitment</li></ul> <ul><li>Discuss the formal step for cleannig and arranging data
-| 3           | 13/05/2024      |      1            |  Individual Work | <ul><li> checking peer's data cleaning step and discuss on slack
-| 3           | 14/05/2024      |      1.5            |  Individual Work | <ul><li> investigating on the proposed clustering technique to be applied to the data
+| 3           | 13/05/2024      |      2            |  Individual Work | <ul><li> checking peer's data cleaning step and discuss on slack
+| 3           | 14/05/2024      |      2            |  Individual Work | <ul><li> investigating on the proposed clustering technique to be applied to the data
 | 3           | 15/05/2024      |      3/4           |  Meeting with Cassie | <ul><li> Presenting the proposal and discuss next steps
-| 3           | 15/05/2024      |      2.5           |  Individual Work | <ul><li> Discuss with sub-group for distribution and performing the hiecharchical clustering on the data
+| 3           | 15/05/2024      |      5           |  Individual Work | <ul><li> Discuss with sub-group for distribution and performing the hiecharchical clustering on the data
 | 3           | 17/05/2024      |      1.5           |  Internal Meeting | <ul><li> Meet up to catch up with everybody's work and findings/li></ul><ul><li> Prepare the questions to ask Siemens team
 | 3           | 17/05/2024      |      1.5           |  Client Meeting | <ul><li> discuss the questions with siemens and ask for suggestions/li></ul><ul><li> show some preliminary results to obtain more advices and decide to choose the preferreed, shape-based cluster approach
 |  4          | 20/05/2024      |      1           |  Internal Meeting | <ul><li>discuss the distribution with the sub-group for clustering/li></ul><ul><li> work through the to-do list for next week and for the weekly report with the Cassie
