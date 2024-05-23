@@ -146,6 +146,27 @@
 - Description: 
     - Reported our updates on clustering and FDA
 
+## W4 Monday 2024/5/20
+- Time (hours): 2
+- Activity Type: Visualizing clustering data
+- Description: 
+    - Tried to cluster on zero-beginning data
+    - Plotted visualizations of cluster
+
+## W4 Tuesday 2024/5/21
+- Time (hours): 3
+- Activity Type: Visualizing clustering data
+- Description: 
+    - Tried to cluster with hc clustering methods
+
+## W4 Wednesday 2024/5/22
+- Time (hours): 3
+- Activity Type: Extracting characteristics of clustering data
+- Description: 
+    - Tried to summarize the characteristics of clustering data
+
+
+
 
 
 
