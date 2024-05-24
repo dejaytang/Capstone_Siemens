@@ -161,11 +161,22 @@
 
 ## W4 Wednesday 2024/5/22
 - Time (hours): 3
-- Activity Type: Extracting characteristics of clustering data
+- Activity Type: characterization of clustering data
 - Description: 
     - Tried to summarize the characteristics of clustering data
 
+## W4 Thursday 2024/5/23
+- Time (hours): 1.5
+- Activity Type: Internal meeting
+- Description: 
+    - Discussed about current progress and question list
 
+## W4 Friday 2024/5/24
+- Time (hours): 1.5
+- Activity Type: Meeting with Siemens
+- Description: 
+    - Asked them questions about bins, temperature and fluid type
+    - Reported our progress and decided to go on with FPCA
 
 
 
