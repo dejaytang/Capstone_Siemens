@@ -44,4 +44,7 @@
 | 4 - Fri      | 24/05/2024      |      1.5         |   Meeting with Siemens  | <ul><li> I presented the results for FPCA characterization and interpretation. </li></ul>|
 | 4 - Fri      | 24/05/2024      |      0.5         |   Meeting with Eden  | <ul><li> Brief discussion about our next steps. </li></ul>|
 | 4 - Sat      | 25/05/2024      |      2.5         |   Coding | <ul><li> Amending code base on Siemens obervations in our Friday's meeting. </li></ul> |
+| 4 - Sat      | 25/05/2024      |      2.0         |   Slide Deck | <ul><li> Work on slide deck for mid presentation. </li></ul> |
+| 4 - Sun      | 26/05/2024      |      1.0         |   Slide Deck | <ul><li> Preparing notes for rehearsal presentation on slide deck for mid presentation. </li></ul> |
+| 4 - Sun      | 26/05/2024      |      1.5         |   Internal Meeting | <ul><li> Discuss and amend slide deck for mid presentation. </li></ul> |
 
