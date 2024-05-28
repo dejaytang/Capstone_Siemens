@@ -47,4 +47,5 @@
 | 4 - Sat      | 25/05/2024      |      2.0         |   Slide Deck | <ul><li> Work on slide deck for mid presentation. </li></ul> |
 | 4 - Sun      | 26/05/2024      |      1.0         |   Slide Deck | <ul><li> Preparing notes for rehearsal presentation on slide deck for mid presentation. </li></ul> |
 | 4 - Sun      | 26/05/2024      |      1.5         |   Internal Meeting | <ul><li> Discuss and amend slide deck for mid presentation. </li></ul> |
-
+| 5 - Mon      | 27/05/2024      |      1.0         |   Internal Meeting | <ul><li> Practicing out loud for the mid presentation.. </li></ul> |
+| 5 - Mon      | 27/05/2024      |      1.0         |   Internal Meeting | <ul><li> Presentation rehearsal. </li></ul> |
