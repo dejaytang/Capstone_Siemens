@@ -163,11 +163,47 @@
 - Time (hours): 3
 - Activity Type: Extracting characteristics of clustering data
 - Description: 
+    - Tried to extract and summarize the characteristics of clustering data
+
+## W4 Thursday 2024/5/23
+- Time (hours): 1.5
+- Activity Type: Internal meeting
+- Description: 
+    - Aligned our progress and discussed respective results
+
+## W4 Friday 2024/5/24
+- Time (hours): 1.5
+- Activity Type: Meeting with Siemens
+- Description: 
+    - Showed the preliminary results for clustering and functional data analysis
+
+## W4 Saturday 2024/5/25
+- Time (hours): 2
+- Activity Type: Modified the slides for clustering
+- Description: 
+    - Modified slides for clustering part
+
+## W4 Sunday 2024/5/26
+- Time (hours): 2
+- Activity Type: Internal meeting
+- Description: 
+    - Discussed designs and contents for slides
+    - Discussed our distribution of mid-point presentation
+
+## W5 Monday 2024/5/27
+- Time (hours): 2
+- Activity Type: Internal meeting
+- Description: 
+    - Rehearsal presentation
+
+## W5 Monday 2024/5/27
+- Time (hours): 1
+- Activity Type: Meeting with Jessie
+- Description: 
+    - Practiced transitioning rehearsal
+
+## W5 Tuesday 2024/5/28
+- Time (hours): 3
+- Activity Type: Meeting with Siemens
+- Description: 
     - Tried to summarize the characteristics of clustering data
-
-
-
-
-
-
-
