@@ -30,4 +30,6 @@
 |  4          | 24/05/2024      |      1.5       |  Internal Meeting| <ul><li>meeting with siemens and we showed the preliminary results for clustering and functional analysis</li></ul><ul><li> discuss with the sub-group for the plan of midterm presentation.
 |  4          | 25/05/2024      |      3.5        |  Individual Work| <ul><li>modified slides for mid-point presentation and modified the coding for improving the visualization plot</li></ul><ul><li> discuss with the whole team for the presentation structure through slack
 |  4          | 26/05/2024      |      1        |  Internal Meeting| <ul><li>meeting to discuss and rearrange the slide deck and distribute everyone's part for presentation </li></ul><ul><li> discuss with the whole team for the presentation structure through slack
-|  5          | 27/05/2024      |      4        |  Individual| <ul><li>prepared the distributed sections for presentation and modified the slides </li></ul><ul><li> discuss with team members for useful insights through slack
+|  5          | 27/05/2024      |      4        |  Individual Work| <ul><li>prepared the distributed sections for presentation and modified the slides </li></ul><ul><li> discuss with team members for useful insights through slack
+|  5          | 28/05/2024      |      2        |  Internal Meeting| <ul><li>rehearsal presentation </li></ul>
+|  5          | 28/05/2024      |      1        |  Internal Meeting| <ul><li>meeting with Nan for transitioning rehearsal </li></ul><ul><li> short discussion for next steps
