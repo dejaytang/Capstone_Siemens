@@ -203,5 +203,87 @@
 	- Weekly Report
 		- Finish Weekly Report
   ------
+## W4 Monday 2024/5/20
+- Time (hours): 3
+- Activity Type: 
+	- Weekly Report
+	- Code
+- Description: 
+	- Weekly Report
+		- Amend report based on teammates suggestions and latest finding
+	- Code
+		- Comment the code
+## W4 Tuesday 2024/5/21
+- Time (hours): 7
+- Activity Type: 
+	- Meeting
+	- Code
+- Description: 
+	- Instructor meeting
+		- Present our last week outcome
+		- Schedule the next week
+	- Professor meeting
+		- Ask for Professor Xiaoping for Statistic views about possible hypothesis test
+	- Sub-group meeting
+		- Present our finding and result
+		- Sort out problems
+	- Code
+		- Implement FPCA regression
+		- Data Wrangling
+
+## W4 Wednesday 2024/5/22
+- Time (hours): 8
+- Activity Type: 
+	- Meeting
+	- Develop code
+- Description: 
+	- Sub-group internal Meeting
+		- Talk about confused question
+		- Make sure in the same page
+		- Schedule the work plan
+	- Develop code
+		- Implement PCA regression
+		- Group raw window by different features
+## W4 Thursday 2024/5/23
+- Time (hours): 7
+- Activity Type: 
+	- Meeting
+	- Research
+- Description: 
+	- Internal Meeting
+		- Present what we did this week
+		- Talk about the presentation for clients and Mid-presentation
+		- Prepare questions
+	- Subgroup meeting
+		- Talk about interesting finding
+		- Schedule the next step
+	- Research
+		- Search related paper about mixed effect model
+		- Understand the potential hypothesis test
+		- Implement code to try interesting one
+## W4 Friday 2024/5/24
+- Time (hours): 4.5
+- Activity Type: 
+	- Meeting
+	- Code debug
+- Description: 
+	- Client Meeting (7)
+		- Present the current finding 
+		- Ask questions
+	- Professor Meeting 
+		- Ask for professor Jeff to clarify our next step
+	- Code debug
+		- Correct the typo of the code
+		- correct the misunderstanding part for client
+## W4 Saturday 2024/5/25
+- Time (hours): 2
+- Activity Type: 
+	- Sliders
+- Description: 
+	- Sliders
+		- Finish Mid-Present slide for Mid-presentation
+		- Dig through Research paper to find better interpretation
+		- 
+## W4 Sunday 2024/5/26
 
   

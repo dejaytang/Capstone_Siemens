@@ -23,7 +23,7 @@
 | 3 - Tue     | 14/05/2024      |     6.0             |   Coding     | <ul><li> Exploring the use of Functional Data Analysis library in Python (skfda) with our data and reading paper and documentation for a better understanding. </li></ul>   |
 | 3 - Wed     | 15/05/2024      |     0.5             |   Coding    | <ul><li> Meeting with Eden to discuss FDA.</li></ul>   |
 | 3 - Wed     | 15/05/2024      |     6.0             |   Coding    | <ul><li> Cleaning and organizing the code for EDA on the original data and EDA on the window extraction data.</li></ul>   |
-| 3 - Thu     | 16/05/2024      |     1.0             |   Meeting with Jeff    | <ul><li> Meeting with Jeff Andrews and Eden to ask for suggestions about the FDA approach or any other techniques that can apply for our project.</li></ul>   |
+| 3 - Thu     | 16/05/2024      |     1.0             |   Meeting with prof. Jeff    | <ul><li> Meeting with Jeff Andrews and Eden to ask for suggestions about the FDA approach or any other techniques that can apply for our project.</li></ul>   |
 | 3 - Thu     | 16/05/2024      |     0.5             |   Coding    | <ul><li> I review peer's code on Functional One-Way ANOVA.</li></ul>   |
 | 3 - Thu     | 16/05/2024      |     5.0             |   WeeklyReport1    | <ul><li> I wrote the report about our findings from the EDA on the raw data.</li></ul>   |
 | 3 - Fri     | 17/05/2024      |     1.5             |   Internal meeting    | <ul><li> Discussion about missing values, clustering and Functional Principal Components before the meeting with Siemens.</li></ul>   |
@@ -33,7 +33,19 @@
 | 3 - Sun     | 19/05/2024      |     5.0             |   WeeklyReport1 | <ul><li> Amending EDA part in the weekly report and contributing in the Functional Data Analysis section, especifically adding an introduction about the FPCA, the PC scores, the TestID's that accounts for the greater variability in the data, a subsection for comparing the plots after removing the bad return codes and a conclusion. </li></ul>   |
 | 4 - Mon     | 20/05/2024      |     1.0             |   Internal Meeting | <ul><li> Meeting with Eden to discuss the changes in the FPCA for the weekly report, and our responsibilities for week 4. </li></ul>   |
 | 4 - Mon     | 20/05/2024      |     1.5             |   WeeklyReport1/Coding | <ul><li> Amending weekly report based on peers suggestions and adding the titles to the plots in the code. </li></ul>   |
-| 4 - Tue     | 21/05/2024      |     1.0             |   Meeting with Xioping | <ul><li> Meeting with professor Xioping and Eden. </li></ul>   |
+| 4 - Tue     | 21/05/2024      |     1.0             |   Meeting with prof. Xioping | <ul><li> Meeting with professor Xioping and Eden. </li></ul>   |
 | 4 - Tue     | 21/05/2024      |     0.8             |   Meeting with faculty advisor  | <ul><li> Meeting with Cassie to present the weekly report. </li></ul>   |
 | 4 - Wed     | 22/05/2024      |     2.0             |   Meeting with Eden | <ul><li> Meeting with Eden. We discuss how the scale of the data can affect FPCA and we found in the documentation of scikit-fda package in Python that the FPCA is applied on the data centered. </li></ul>  <ul><li> We define and splir our responsibilities for week 4. </li></ul>  |
 | 4 - Wed     | 22/05/2024      |     6.0             |   Coding | <ul><li> Amend the FPCA function to plot the principal component in one row (both PC's, FPC1, FPC2) </li></ul>  <ul><li> Plot FPC1 for system 1 and system 2 together for all systems and sensors </li></ul>  <ul><li> Characterize PC Scores by mapping the additional features with colors in the plot of PC Score 1 versus PC Score 2. </li></ul> |
+| 4 - Thur     | 23/05/2024      |      1.0         |   Meeting with Eden | <ul><li> Meeting with Eden to discuss results. </li></ul> |
+| 4 - Thur     | 23/05/2024      |      2.0         |   Research | <ul><li> Read more about how to interpret the FPCA in "Applied Functional Data Analysis: Methods and Case Studies" (Ramsay & Silverman, 2002). </li></ul> |
+| 4 - Thur     | 23/05/2024      |      3.0         |   Coding | <ul><li> Summarize the FPCA results and insights in a slide deck to present to Siemens.</li></ul> |
+| 4 - Fri      | 24/05/2024      |      0.3         |   Meeting with prof. Jeff  | <ul><li> Brief meeting with professor Jeff to ask Geneal feedback about FPCA results and his point of view about next steps. </li></ul>|
+| 4 - Fri      | 24/05/2024      |      1.5         |   Meeting with Siemens  | <ul><li> I presented the results for FPCA characterization and interpretation. </li></ul>|
+| 4 - Fri      | 24/05/2024      |      0.5         |   Meeting with Eden  | <ul><li> Brief discussion about our next steps. </li></ul>|
+| 4 - Sat      | 25/05/2024      |      2.5         |   Coding | <ul><li> Amending code base on Siemens obervations in our Friday's meeting. </li></ul> |
+| 4 - Sat      | 25/05/2024      |      2.0         |   Slide Deck | <ul><li> Work on slide deck for mid presentation. </li></ul> |
+| 4 - Sun      | 26/05/2024      |      1.0         |   Slide Deck | <ul><li> Preparing notes for rehearsal presentation on slide deck for mid presentation. </li></ul> |
+| 4 - Sun      | 26/05/2024      |      1.5         |   Internal Meeting | <ul><li> Discuss and amend slide deck for mid presentation. </li></ul> |
+| 5 - Mon      | 27/05/2024      |      1.0         |   Internal Meeting | <ul><li> Practicing out loud for the mid presentation.. </li></ul> |
+| 5 - Mon      | 27/05/2024      |      1.0         |   Internal Meeting | <ul><li> Presentation rehearsal. </li></ul> |
