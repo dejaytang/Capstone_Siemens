@@ -33,3 +33,7 @@
 |  5          | 27/05/2024      |      4        |  Individual Work| <ul><li>prepared the distributed sections for presentation and modified the slides </li></ul><ul><li> discuss with team members for useful insights through slack
 |  5          | 28/05/2024      |      2        |  Internal Meeting| <ul><li>rehearsal presentation </li></ul>
 |  5          | 28/05/2024      |      1        |  Internal Meeting| <ul><li>meeting with Nan for transitioning rehearsal </li></ul><ul><li> short discussion for next steps
+|  5          | 28/05/2024      |      4        |  Individual Work| <ul><li>practice presentation and record videos as back up in case of any technical issues
+|  5          | 28/05/2024      |      2        |  Midterm Presentation Event| <ul><li> present the progress and preliminary results
+|  5          | 28/05/2024      |      2        |  Internal Meeting| <ul><li> discuss for the presentation to the Siemens team and the distribution for the next week
+|  5          | 29/05/2024      |      0.5        |  Internal Meeting| <ul><li> Modified the slides for the presentation to Siemens team
