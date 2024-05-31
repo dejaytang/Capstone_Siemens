@@ -37,3 +37,4 @@
 |  5          | 28/05/2024      |      2        |  Midterm Presentation Event| <ul><li> present the progress and preliminary results
 |  5          | 28/05/2024      |      2        |  Internal Meeting| <ul><li> discuss for the presentation to the Siemens team and the distribution for the next week
 |  5          | 29/05/2024      |      0.5        |  Internal Meeting| <ul><li> Modified the slides for the presentation to Siemens team
+|  5          | 30/05/2024      |      3        |  Individual Work| <ul><li> Modified the slides for the presentation to Siemens team</li></ul><ul><li>Discuss the function in coding with the whole team through slack
