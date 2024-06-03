@@ -207,3 +207,45 @@
 - Activity Type: Meeting with Siemens
 - Description: 
     - Tried to summarize the characteristics of clustering data
+
+## W5 Tuesday 2024/5/28
+- Time (hours): 2
+- Activity Type: Internal meeting
+- Description: 
+    - Discussed our next steps for regression and hypothesis test
+
+## W5 Wednesday 2024/5/29
+- Time (hours): 1.5
+- Activity Type: Working on codes
+- Description: 
+    - Looked through FPCA part
+
+## W5 Thursday 2024/5/30
+- Time (hours): 1.5
+- Activity Type: Working on codes
+- Description: 
+    - Looked through Functional regression part
+
+## W5 Friday 2024/5/31
+- Time (hours): 1
+- Activity Type: Meeting with Siemens
+- Description: 
+    - Showed some preliminary results
+
+## W5 Friday 2024/5/31
+- Time (hours): 2
+- Activity Type: Working on codes
+- Description: 
+    - Tried standardized method along rows on FPCA data
+
+## W5 Sunday 2024/6/2
+- Time (hours): 2
+- Activity Type: Internal meeting
+- Description: 
+    - Discussed balanced dataset techniques and boostrap
+
+## W6 Monday 2024/6/3
+- Time (hours): 1
+- Activity Type: Meeting with Siemens counsulting committee
+- Description: 
+    - Presented our mid-point results
