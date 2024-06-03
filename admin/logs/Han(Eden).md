@@ -285,5 +285,79 @@
 		- Dig through Research paper to find better interpretation
 		- 
 ## W4 Sunday 2024/5/26
+- Time (hours): 4
+- Activity Type: 
+	- Code
+- Description: 
+	- Code
+		- Merge Functional regression into Functional PCA part
+		- Debug some mistakes
+		
+------------------------------------------
+
+## W5 Monday 2024/5/27
+- Time (hours): 4
+- Activity Type: 
+	- Meeting
+	- Practice
+- Description: 
+	- Group Meeting
+		- Rehearsal the mid-presentation
+	- 	Practice
+		- Practice the mid-term presentation
+
+## W5 Tuesday 2024/5/28
+- Time (hours): 5
+- Activity Type: 
+	- Meeting
+- Description: 
+	- General Meeting
+		- Mid-term Presentation
+	- 	Meeting with Career Adviser
+		- Feedback to Career Adviser
+
+## W5 Wednesday 2024/5/29
+- Time (hours): 6.5
+- Activity Type: 
+	- Code
+- Description: 
+	- Code
+		- Update the code for Resampling 
+		- Implement Simple Linear Regression
+
+
+## W5 Thursday 2024/5/30
+- Time (hours): 5
+- Activity Type: 
+	- Code
+	- Slide
+- Description: 
+	- Code
+		- Amend some typos in the code
+	- Slide
+		- Update the slides after resampling, and find another interpretation about this
+
+## W5 Friday 2024/5/31
+- Time (hours): 2.5
+- Activity Type: 
+	- Meeting
+	- Research
+- Description: 
+	- Client Meeting (8)
+		- Present the current finding 
+		- Ask questions
+	- 	Research
+		- Summary the previous questions  
+		- Find a possible way to do further study
+		- 
+## W5 Saturday 2024/6/1
+- Time (hours): 2
+- Activity Type: 
+	- Code
+- Description: 
+	- Code
+		- Align dataset with the same start point before FPCA
+
+## W5 Sunday 2024/6/2
 
   
