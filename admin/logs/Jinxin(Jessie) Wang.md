@@ -38,3 +38,7 @@
 |  5          | 28/05/2024      |      2        |  Internal Meeting| <ul><li> discuss for the presentation to the Siemens team and the distribution for the next week
 |  5          | 29/05/2024      |      0.5        |  Internal Meeting| <ul><li> Modified the slides for the presentation to Siemens team
 |  5          | 30/05/2024      |      3        |  Individual Work| <ul><li> Modified the slides for the presentation to Siemens team</li></ul><ul><li>Discuss the function in coding with the whole team through slack
+|  5          | 31/05/2024      |      0.5        |  Group Discussion| <ul><li> discuss about the different approaches of preprocessing
+|  5          | 31/05/2024      |      1        |  Meeting with Client| <ul><li> Show some preliminary findings after we balanced the data by the fluid types
+|  6          | 03/06/2024      |      2.5        |  Internal Meeting| <ul><li> Rehersal Presentation to Siemens</li></ul><ul><li>Discuss about the further methods for analysis and distribution for the next week.</li></ul><ul><li>Discuss the content for the weekly meeting with Cassie
+|  6          | 03/06/2024      |      0.5        |  Meeting with Client| <ul><li> Presentation to Siemens
