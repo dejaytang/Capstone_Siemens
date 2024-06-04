@@ -53,3 +53,7 @@
 | 5 - Wed      | 29/05/2024      |      1.5         |   Coding | <ul><li> Checking resample based on Fluid Type from a teammate. </li></ul> <ul><li> Replicating an example from 'scikit-fda' to double check the way of computing the mean (row wise/ column wise) in the FPCA. </li></ul> |
 | 5 - Thu     | 30/05/2024      |      5.0         |   Coding | <ul><li> Created code for comparison of 5 ways of scaling the data before and after runing FPCA. </li></ul> <ul><li> Tried analysis of variance to assess degree of flatness on stationary data. It turns difficult as the series are autocorrelated. Still thinking on how to solve this issue.  </li></ul>|
 | 5 - Fri    | 31/05/2024      |      1.0         |   Meeting with Siemens | <ul><li> I showed the comparison of the analysis after scaling. Raegan and Sara suggest running the analysis parallel on raw and scale data to make comparisons on the interpretation. </li></ul>|
+| 5 - Sun    | 02/06/2024      |      2.0         |   Internal mmeting | <ul><li> Presentation rehearsal. </li></ul> <ul><li> Disscussion about next steps. </li></ul>|
+| 6 - Mon    | 03/06/2024      |      1.0         |   Meeting with committe advisor | <ul><li> Presenting FPCA. </li></ul>|
+| 6 - Mon    | 03/06/2024      |      2.0         |   Coding | <ul><li> Finishing variance analysis on the Sample Window. </li></ul>|
+| 6 - Mon    | 03/06/2024      |      5.0         |   Weekly report | <ul><li> Reporting the results about the variance analysis, introduction about the scaling methods, baseline and wise-row centering. </li></ul>|
