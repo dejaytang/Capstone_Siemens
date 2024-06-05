@@ -42,3 +42,6 @@
 |  5          | 31/05/2024      |      1        |  Meeting with Client| <ul><li> Show some preliminary findings after we balanced the data by the fluid types
 |  6          | 03/06/2024      |      2.5        |  Internal Meeting| <ul><li> Rehersal Presentation to Siemens</li></ul><ul><li>Discuss about the further methods for analysis and distribution for the next week.</li></ul><ul><li>Discuss the content for the weekly meeting with Cassie
 |  6          | 03/06/2024      |      0.5        |  Meeting with Client| <ul><li> Presentation to Siemens
+|  6          | 04/06/2024      |      0.5        |  individual work | <ul><li> summarize the next steps in the weekly reports
+|  6          | 04/06/2024      |      2        |  individual work | <ul><li> investigate the way of preprocess the data</li></ul><ul><li>Think about how to balance the fulid temperature
+|  6          | 04/06/2024      |      0.75       |  Meeting with Cassie | <ul><li> Show the current progress and summarize the next steps
