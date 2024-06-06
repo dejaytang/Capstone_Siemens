@@ -204,7 +204,7 @@
 
 ## W5 Tuesday 2024/5/28
 - Time (hours): 3
-- Activity Type: Meeting with Siemens
+- Activity Type: Working on codes
 - Description: 
     - Tried to summarize the characteristics of clustering data
 
@@ -249,3 +249,21 @@
 - Activity Type: Meeting with Siemens counsulting committee
 - Description: 
     - Presented our mid-point results
+
+## W6 Tuesday 2024/6/4
+- Time (hours): 3
+- Activity Type: Working on codes
+- Description: 
+    - Discussed with Nayeli and probed scaled data methods
+
+## W6 Tuesday 2024/6/4
+- Time (hours): 2/3
+- Activity Type: Meeting with instructor
+- Description: 
+    - Presented FPCA and scale comparison results
+
+## W6 Wednesday 2024/6/5
+- Time (hours): 3
+- Activity Type: Working on codes
+- Description: 
+    - Tried to balance data with regards to temperature and see some results
