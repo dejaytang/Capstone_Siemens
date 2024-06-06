@@ -45,4 +45,5 @@
 |  6          | 04/06/2024      |      0.5        |  individual work | <ul><li> summarize the next steps in the weekly reports
 |  6          | 04/06/2024      |      2        |  individual work | <ul><li> investigate the way of preprocess the data</li></ul><ul><li>Think about how to balance the fulid temperature
 |  6          | 04/06/2024      |      0.75       |  Meeting with Cassie | <ul><li> Show the current progress and summarize the next steps
-|  6          | 05/06/2024      |      2.5      |  Individual Work | <ul><li> Try to compare the results for centering parameter with values of trye and false</li></ul><ul><li>Work on the coding with balancing the fulid temperature. 
+|  6          | 05/06/2024      |      2.5      |  Individual Work | <ul><li> Try to compare the results for centering parameter with values of trye and false</li></ul><ul><li>Work on the coding with balancing the fulid temperature.
+|  6          | 06/06/2024      |      3      |  Individual Work | <ul><li> Discussed with team members for how to balance the temperature and went over the collabrated coding.</li></ul><ul><li>went over other team's work
