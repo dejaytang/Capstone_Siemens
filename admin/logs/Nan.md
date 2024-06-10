@@ -267,3 +267,16 @@
 - Activity Type: Working on codes
 - Description: 
     - Tried to balance data with regards to temperature and see some results
+
+## W6 Thursday 2024/6/6
+- Time (hours): 1.5
+- Activity Type: Meeting with Siemens
+- Description: 
+    - Presented characterization results for Siemens
+    - Discussed our next steps
+
+## W6 Friday 2024/6/7
+- Time (hours): 3
+- Activity Type: Working on codes
+- Description: 
+    - Tried to integrate the code for creating slope calculation functions 
