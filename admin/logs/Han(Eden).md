@@ -360,4 +360,157 @@
 
 ## W5 Sunday 2024/6/2
 
-  
+- Time (hours): 4
+- Activity Type: 
+	- Code
+- Description: 
+	- Code
+		- Merge Functional regression into Functional PCA part
+		- Debug some mistakes
+		
+------------------------------------------
+
+## W5 Monday 2024/5/27
+- Time (hours): 4
+- Activity Type: 
+	- Meeting
+	- Practice
+- Description: 
+	- Group Meeting
+		- Rehearsal the mid-presentation
+	- 	Practice
+		- Practice the mid-term presentation
+
+## W5 Tuesday 2024/5/28
+- Time (hours): 5
+- Activity Type: 
+	- Meeting
+- Description: 
+	- General Meeting
+		- Mid-term Presentation
+	- 	Meeting with Career Adviser
+		- Feedback to Career Adviser
+
+## W5 Wednesday 2024/5/29
+- Time (hours): 6.5
+- Activity Type: 
+	- Code
+- Description: 
+	- Code
+		- Update the code for Resampling 
+		- Implement Simple Linear Regression
+
+
+## W5 Thursday 2024/5/30
+- Time (hours): 5
+- Activity Type: 
+	- Code
+	- Slide
+- Description: 
+	- Code
+		- Amend some typos in the code
+	- Slide
+		- Update the slides after resampling, and find another interpretation about this
+
+## W5 Friday 2024/5/31
+- Time (hours): 2.5
+- Activity Type: 
+	- Meeting
+	- Research
+- Description: 
+	- Client Meeting (8)
+		- Present the current finding 
+		- Ask questions
+	- 	Research
+		- Summary the previous questions  
+		- Find a possible way to do further study
+		- 
+## W5 Saturday 2024/6/1
+- Time (hours): 2
+- Activity Type: 
+	- Code
+- Description: 
+	- Code
+		- Align dataset with the same start point before FPCA
+
+## W5 Sunday 2024/6/2
+- Time (hours): 2
+- Activity Type: 
+	- Meeting
+	- Slide
+- Description: 
+	- Internal Meeting
+		- Rehearsal for presentation to the clients
+	- Slide
+		- Update the slide for presentation
+## W6 Monday 2024/6/3
+- Time (hours): 5
+- Activity Type: 
+	- Meeting
+	- Code
+	- Report
+- Description: 
+	- Clients Meeting (10)
+		- Rehearsal for presentation to the clients
+	- Code
+		- Merge and amend previous code
+		- Apply Linear regression to get the summary table after balancing the data
+	- Report 
+		- Finish weekly report
+
+## W6 Tuesday 2024/6/4
+- Time (hours): 3
+- Activity Type: 
+	- Meeting
+- Description: 
+	- Instructor Meeting 
+		- Present weekly report
+
+
+## W6 Wednesday 2024/6/5
+- Time (hours): 2
+- Activity Type: 
+	- Code
+- Description: 
+	- Code
+		- Create Bootstrap code
+
+## W6 Thursday 2024/6/6
+- Time (hours): 4
+- Activity Type: 
+	- Meeting
+	- Code
+- Description: 
+	- Client Meeting (11)
+		- Ask questions
+		- Present the result
+		- Schedule the future work
+	- Code
+		- Add the box plot in bootstrap part
+		- Amend the bootstrap 
+
+## W6 Friday 2024/6/7
+- Time (hours): 3
+- Activity Type: 
+	- Code
+- Description: 
+	- Code
+		- Check the code for standardized 
+		- Update the bootstrap version
+
+## W6 Saturday 2024/6/8
+- Time (hours): 1
+- Activity Type: 
+	- Meeting
+- Description: 
+	-Group Meeting
+		- Discuss the structure about the final pipeline
+
+------------------------------------
+## W7 Monday 2024/6/10
+- Time (hours): 1
+- Activity Type: 
+	- Code
+- Description: 
+	-Code
+		- Finish the pipeline
