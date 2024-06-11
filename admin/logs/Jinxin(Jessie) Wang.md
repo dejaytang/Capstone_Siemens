@@ -41,7 +41,7 @@
 |  5          | 31/05/2024      |      0.5        |  Group Discussion| <ul><li> discuss about the different approaches of preprocessing
 |  5          | 31/05/2024      |      1        |  Meeting with Client| <ul><li> Show some preliminary findings after we balanced the data by the fluid types
 |  6          | 03/06/2024      |      2.5        |  Internal Meeting| <ul><li> Rehersal Presentation to Siemens</li></ul><ul><li>Discuss about the further methods for analysis and distribution for the next week.</li></ul><ul><li>Discuss the content for the weekly meeting with Cassie
-|  6          | 03/06/2024      |      0.5        |  Meeting with Client| <ul><li> Presentation to Siemens
+|  6          | 03/06/2024      |      0.75        |  Meeting with Client| <ul><li> Presentation to Siemens
 |  6          | 04/06/2024      |      0.5        |  individual work | <ul><li> summarize the next steps in the weekly reports
 |  6          | 04/06/2024      |      2        |  individual work | <ul><li> investigate the way of preprocess the data</li></ul><ul><li>Think about how to balance the fulid temperature
 |  6          | 04/06/2024      |      0.75       |  Meeting with Cassie | <ul><li> Show the current progress and summarize the next steps
@@ -49,3 +49,5 @@
 |  6          | 06/06/2024      |      3      |  Individual Work | <ul><li> Discussed with team members for how to balance the temperature and went over the collabrated coding.</li></ul><ul><li>went over other team member's work
 |  6          | 06/06/2024      |      1.5      |  Meeting with Client | <ul><li> Present new findings and reclarify some questions for discussion</li></ul><ul><li>discuss about how to optimize window.
 |  6          | 06/06/2024      |      1.5      |  Individual Work | <ul><li> Discuss with the team through slack for the distribution in the next week
+|  6          | 07/06/2024      |      1.5      |  Individual Work | <ul><li> discuss and investigate how to optimize the window placement</li></ul><ul><li>propose a folder structure for summarizing the summary of waveforms chractorization pipeline
+|  6          | 08/06/2024      |      1.5      |  Individual Work | <ul><li> summarize the weekly report for week six</li></ul><ul><li>discuss with the team memebers for the distribution and the way to structure the main task
