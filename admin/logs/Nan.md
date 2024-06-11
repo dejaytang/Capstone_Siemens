@@ -280,3 +280,15 @@
 - Activity Type: Working on codes
 - Description: 
     - Tried to integrate the code for creating slope calculation functions 
+
+## W7 Monday 2024/6/10
+- Time (hours): 4
+- Activity Type: Working on codes
+- Description: 
+    - Tried to plot the slope difference for every possible delimit value in the available range 
+
+## W7 Monday 2024/6/10
+- Time (hours): 3
+- Activity Type: Working on codes
+- Description: 
+    - Discussed with Jessie and modified the available range
