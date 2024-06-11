@@ -51,3 +51,5 @@
 |  6          | 06/06/2024      |      1.5      |  Individual Work | <ul><li> Discuss with the team through slack for the distribution in the next week
 |  6          | 07/06/2024      |      1.5      |  Individual Work | <ul><li> discuss and investigate how to optimize the window placement</li></ul><ul><li>propose a folder structure for summarizing the summary of waveforms chractorization pipeline
 |  6          | 08/06/2024      |      1.5      |  Individual Work | <ul><li> summarize the weekly report for week six</li></ul><ul><li>discuss with the team memebers for the distribution and the way to structure the main task
+|  7          | 11/06/2024      |      1        |  Meeting with Nan | <ul><li> discuss about the python draft script for window optimization
+|  7          | 11/06/2024      |      4.5      |  Individual Work | <ul><li> investigate about the interpretation of two approaches of preprocess the data</li></ul><ul><li>discuss with Siemens through chat for clarification about focus related to window optimization </li></ul><ul><li> modify the coding snipt for the window optimization
