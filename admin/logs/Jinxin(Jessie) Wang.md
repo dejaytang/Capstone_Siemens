@@ -53,3 +53,6 @@
 |  6          | 08/06/2024      |      1.5      |  Individual Work | <ul><li> summarize the weekly report for week six</li></ul><ul><li>discuss with the team memebers for the distribution and the way to structure the main task
 |  7          | 11/06/2024      |      1        |  Meeting with Nan | <ul><li> discuss about the python draft script for window optimization
 |  7          | 11/06/2024      |      4.5      |  Individual Work | <ul><li> investigate about the interpretation of two approaches of preprocess the data</li></ul><ul><li>discuss with Siemens through chat for clarification about focus related to window optimization </li></ul><ul><li> modify the coding snipt for the window optimization
+|  7          | 11/06/2024      |      0.75      |  Weekly Meeting with Cassie | <ul><li> Summary of the project progress and next steps for the remaining two weeks</li></ul><ul><li>provide some interpretation for the preprocessing approaches
+|  7          | 11/06/2024      |      1.5      |  Individual Work | <ul><li> Discuss about the question list to Siemens and the draft code file for window optimization for their feedback
+|  7          | 12/06/2024      |      1      |  Individual Work | <ul><li> look over the coding structure example for the main task and provide feedback to the team member
