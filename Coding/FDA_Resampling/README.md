@@ -1,4 +1,5 @@
-## Index
+## Task 1. Waveforms characterization
+
 1. Loading the datasets
 2. Preprocessing steps
    - 2.1. Data wrangling on time series
