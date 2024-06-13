@@ -4,13 +4,6 @@
 
 * **FDA_Resampling/**
   * **RawData/**
-    * Key by TestID.csv
-    * System1_SensorA.csv
-    * System1_SensorB.csv
-    * System2_SensorA.csv
-    * System2_SensorA.csv
-    * SensorA_System1_missing values.csv
-    * SensorA_System2_missing values.csv
   * **Centering_by_ColumnMeans/**
     * `RawData_CardAge.py`
     * `RawData_FluidTemperature.py`
@@ -58,11 +51,17 @@ To use the functions defined in `time_series_visualization.py`, `window_extracti
   * `plot_all_time_series_and_mean_fpca`: Plot all the time series from a data frame and an additional time series. For the additional time series, two values must be provided, 'x_new' which is the array of timestamps and 'y-new' which is the array of values frome the timeseries.
   * `plot_all_time_series_in_group`: Plot time series data from four dataframes in a 2x2 grid of subplots.
 
-2. `window_extraction.py`:
+2. `window_extraction.py`: Compress four functions related with the window extraction and data preprocessing steps.
+   
+   * `calculate_window_values`: Calculate the start and end values for calibration and sample windows.
+   * `calculate_window_data`: Extracts calibration and sample window data from a given row of time series data.
+   * `Merge_data`: Merge de data from the window extraction with the attributes of interest.
+   * `align_to_zero`: Aligns each column of the DataFrame to its first value (zero index) by subtracting the first column from all subsequent columns.
+   * `balance_index`: Balances the dataset based on the features taking the minimum number of waveforms per bin.
 
-3. `functionalPCA.py`:
+4. `functionalPCA.py`:
 
-4. `functional_regression.py`:
+5. `functional_regression.py`:
 
 You can import the functions using the following code:
 
@@ -75,14 +74,22 @@ from functional_regression import Function_regression, coefficent_visualization
 
 ## Pipeline
 
-The following diagram shows the pipeline for the main task of waveform characterization, which is structure in four main steps: data loading, data preprocessing, windows extraction and Funntional Data Analysis.
+The following diagram shows the pipeline for the main task of waveform characterization, which has four main steps: data loading, data preprocessing, windows extraction and Funntional Data Analysis.
 
 ![Pipeline](Images/Flowchart_FDA_Resampling.png)
 
-### Data
 ## Results
-### Windows viz
-### FPCA (split into 3)
-### Table slopes comparison
-### Functional Regression plot
-## Citation FDA Library
+
+**Windows visualization**
+
+**Functional PCA**
+
+- Visualization of waveforms and the mean function:
+- Visualization of the first two eingenfunctions (principal components):
+- Visualization of the mean and boxplots of the first component:
+- Visualization of the eigenvalues (scores) colored-mapping by attributes:
+- Simple Linear Regression slopes comparison:
+
+**Functional Regression**
+- Visualization of Functional Regression coefficients:
+
