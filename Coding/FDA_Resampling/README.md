@@ -1,5 +1,7 @@
-## Task 1. Waveforms characterization
+# Task 1. Waveforms characterization
+## Functional Data Analysis
 
+### File Structure
 1. Loading the datasets
 2. Preprocessing steps
    - 2.1. Data wrangling on time series
@@ -19,8 +21,11 @@
 5. Functional Regression
    - 5.1. Regression coefficients
    - 5.2. Coefficients visualization
+   
 ## Prerequisites
 ### Installation
+-   Install scikit-fda using `!pip install scikit-fda`
+-   Install
 ### Description of the content of the 4 pre-designed functions
 ### Data
 ## Results
