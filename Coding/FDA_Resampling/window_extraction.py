@@ -66,16 +66,24 @@ def calculate_window_data(row):
 
 def Merge_data(windows, merge_data):
     """
-    Merge the 'windows' dataframe with selected columns from the 'merge' dataframe,
-    categorize 'AgeOfCardInDaysAtTimeOfTest' and 'AmbientTemperature' into bins,
-    and return a random sample of the combined dataframe.
+    Merges the 'windows' DataFrame with selected columns from the 'merge_data' DataFrame,
+    and returns the combined DataFrame.
 
     Parameters:
-    windows (DataFrame): The primary dataframe to merge.
-    merge (DataFrame): The dataframe containing the additional columns to merge.
-
+    ----------
+    windows : pd.DataFrame
+        The primary DataFrame to merge.
+    
+    merge_data : pd.DataFrame
+        The DataFrame containing additional columns to merge. 
+        The columns required from this DataFrame are:
+        'FluidType', 'AgeOfCardInDaysAtTimeOfTest', 'Fluid_Temperature_Filled', 
+        'FluidTypeBin', 'CardAgeBin', and 'FluidTempBin'.
+    
     Returns:
-    DataFrame: A random sample of 500 rows from the merged dataframe.
+    -------
+    pd.DataFrame
+        The merged DataFrame containing selected columns from both input DataFrames.
     """
 
     # Merge the two dataframes on their indices
