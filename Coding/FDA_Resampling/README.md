@@ -70,7 +70,7 @@ from functional_regression import Function_regression, coefficent_visualization
 
 The following diagram shows the pipeline for the main task of waveform characterization, which has four main steps: data loading, data preprocessing, windows extraction and Funntional Data Analysis.
 
-![Pipeline](Images/Flowchart_FDA_Resampling.png)
+![Pipeline](Images/Flowchart_FDA_Resampling_Final.png)
 
 ## Results
 
