@@ -56,4 +56,5 @@
 |  7          | 11/06/2024      |      0.75      |  Weekly Meeting with Cassie | <ul><li> Summary of the project progress and next steps for the remaining two weeks</li></ul><ul><li>provide some interpretation for the preprocessing approaches
 |  7          | 11/06/2024      |      1.5      |  Individual Work | <ul><li> Discuss about the question list to Siemens and the draft code file for window optimization for their feedback
 |  7          | 12/06/2024      |      1      |  Individual Work | <ul><li> look over the coding structure example for the main task and provide feedback to the team member
-|  7          | 13/06/2024      |      3.5      |  Individual Work | <ul><li> Work on fixing the sensor B blood sample window optimization</li></ul><ul><li>technical issues for local laptop</li></ul><ul><li>entirely compress the warnings
+|  7          | 13/06/2024      |      4      |  Individual Work | <ul><li> Work on fixing the sensor B blood sample window optimization</li></ul><ul><li>technical issues for local laptop</li></ul><ul><li>entirely compress the warnings</li></ul><ul><li>modified steps for optimal option
+|  7          | 13/06/2024      |      1.5      |  Internal Meeting |<ul><li> went through the process and discuss the questions to ask Siemens tomorrow
