@@ -69,4 +69,8 @@
 | 7 - Tue    | 11/06/2024      |      0.1         |  Weekly report | <ul><li> Presenting FPCA high level interpretation to Cassie and ask for feedback on the plots. </li></ul>|
 | 7 - Wed    | 12/06/2024      |      1.5         |  Final report | <ul><li> Writing the preprocessing steps, window extraction, scaling and balancing within section 4-Data. </li></ul>|
 | 7 - Wed    | 12/06/2024      |      5.0         |  Coding | <ul><li> Checking final version of the code that summarizes our FDA resampling pipeline, troubleshoting with Eden, modifying the balancing part to be included only in the prepocesing steps and not within the analysis for neatness and replicating the code on the 3 Jupyter notebooks for the raw data. </li></ul>|
+| 7 - Thu    | 13/06/2024      |      1.5         |  Meeting with Eden | <ul><li> Planning README structure and results for FDA resamping in the final report. </li></ul>|
+| 7 - Thu    | 13/06/2024      |      2.5         |  README | <ul><li> Creating flowchart and collaborating on README file. </li></ul>|
+| 7 - Thu    | 13/06/2024      |      0.5         |  Coding | <ul><li> Updating windows titles and reorganizing files in the GitHub as peers suggestion. </li></ul>|
+| 7 - Thu    | 13/06/2024      |      0.2         |  Internal meeting | <ul><li> Presenting the flowchart for the pipeline for waveform characterization. </li></ul>|
 
