@@ -499,7 +499,7 @@ B2_sample_window_combine_balanced = B2_sample_window_combine.loc[System2_Index]
 
 
 # Plot all the balanced time series from the window extraction
-plot_all_time_series_in_group(A1_cal_window_combine_balanced, A1_sample_window_combine_balanced, A2_cal_window_combine_balanced, A2_sample_window_combine_balanced, "CardAgeBin", "A1_cal_window_combine", "A1_sample_window_combine","A2_blood_cal_window_combine", "A2_sample_window_combine")
+plot_all_time_series_in_group(A1_cal_window_combine_balanced, A1_sample_window_combine_balanced, A2_cal_window_combine_balanced, A2_sample_window_combine_balanced, "CardAgeBin", "System 1A - CalWindow", "System 1A - SampleWindow","System 2A - CalWindow", "System 2A - SampleWindow")
 
 
 # #### System 1 and System 2: Sensor B - Cal and Sample Windows
@@ -508,24 +508,25 @@ plot_all_time_series_in_group(A1_cal_window_combine_balanced, A1_sample_window_c
 
 
 # Plot all the balanced time series from the window extraction
-plot_all_time_series_in_group(B1_cal_window_combine_balanced, B1_sample_window_combine_balanced, B2_cal_window_combine_balanced, B2_sample_window_combine_balanced, "CardAgeBin", "B1_cal_window_combine", "B1_sample_window_combine", "B2_blood_cal_window_combine", "B2_sample_window_combine")
+plot_all_time_series_in_group(B1_cal_window_combine_balanced, B1_sample_window_combine_balanced, B2_cal_window_combine_balanced, B2_sample_window_combine_balanced, "CardAgeBin", "System 1B - CalWindow", "System 1B - SampleWindow","System 2B - CalWindow", "System 2B - SampleWindow")
 
 
 # # 4. FPCA characterization
 
 # ## 4.1. Functional PC1 plots (both systems) and Characterization of FPC Scores
 
-# The following secssion will introduce 
-# 1. Explan variance
-# 2. Waveforms with significant features of different components
-# 3. Plot 1-2: all the waveforms and one mean waveform after aggregating
-# 4. Plot 3-4: The first two component in different systems
-# 5. Plot 5: The first component of two systems in the same canvas
-# 6. Plot 6: The confidential interval of two systems by bootstrap
-# 7. Plot 7-8: The boxplots in two systems show the different percentile about the first component
-#     - Red dashed lines indicate detected outliers
-#     - Red area shows the box region
-# 8. Plot 9-12: The visualization of PCA component scores
+# The following seccion will introduce 
+# 1. Percentage of variance explain by the components.
+# 2. Time series with the major contribution on the components.
+# 3. Plot 1-2: All the waveforms and the mean function.
+# 4. Plot 3-4: First two components in different systems.
+# 5. Plot 5: First component (eigenfunction) of the two systems.
+# 6. Plot 6: The confidence interval of the mean first component computed using bootstrap.
+# 7. Plot 7-8: The boxplots of the generated samples of the first component.
+#    The boxplots show the different percentile about the first component.
+#     - Red dashed lines indicate detected outliers.
+#     - Red area shows the box region.
+# 9. Plot 9-12: Eigenvalues (scores) colored-mapping by attributes.
 
 # ### System 1 versus System 2: Sensor A - Cal Window
 
@@ -604,12 +605,12 @@ slopes_df
 
 # # 5. Functional Regression
 
-# This is another functional analysis method. Unlike FPCA, the following analysis utilizes **the entire time series** in a balanced and centered dataset as  response variables for regression with **the features before grouping by bins**. This is done to distinguish between two systems under the influence of features.
+# This is another functional Data Analysis method. Unlike FPCA, the following analysis utilizes **the entire time series** in a balanced and centered dataset as response variables for regression with **the features grouped by bins**. This is done to distinguish between two systems under the influence of features.
 
 # ## 5.1. Regression coefficients
 
-# This is the coeffcient from the output of the model.
-# Because of the different magnitude, we need to choose the time stamps before we visualize
+# These are the coefficients from the output of the model.
+# - Note: In the visualizations, due to the different magnitude, we need to choose the time stamps before we visualize.
 
 # ### Sensor A
 
@@ -664,13 +665,6 @@ B2_sample_window_funct_reg = Function_regression(B2_sample_window_combine_balanc
 
 
 # ## 5.2. Coefficients visualization
-
-# 
-# As the result show above, the first time point is larger than others. And apart from **Sample Window Sensor A** (the last two points), the value at the last 4 time stamps are also significantly greater than the rest of the data. 
-# * Same case in both systems.
-# * Same case in both sensors.
-# 
-# So for the convenience of visualization, we remove these points.
 
 # ### Sensor A
 
