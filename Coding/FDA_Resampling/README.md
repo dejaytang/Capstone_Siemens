@@ -29,7 +29,15 @@ The code was written in Python and can be run on terminal using the '.py' files 
 
 ### Installation
 
-Use the  library [scikit-fda](https://fda.readthedocs.io/en/latest/): `pip install scikit-fda`
+- Use the  library [scikit-fda](https://fda.readthedocs.io/en/latest/): `pip install scikit-fda`
+ 
+- Clone this repo:
+```bash
+git clone https://github.com/dejaytang/Capstone_Siemens
+cd Capstone_Siemens/FDA_Resampling
+```
+### Import RawData
+Please place the datasets named `Key by TestID.csv`, `SensorA_System1_missing values.csv`, `SensorA_System2_missing values.csv`, `System1_SensorA.csv`, `System1_SensorB.csv`, `System2_SensorA.csv`, and `System2_SensorB.csv` into the **RawData** folder.
 
 ### Usage custom functions
 
@@ -45,14 +53,21 @@ To use the functions defined in `time_series_visualization.py`, `window_extracti
 2. `window_extraction.py`: Compress four functions related with the window extraction and data preprocessing steps.
    
    * `calculate_window_values`: Calculate the start and end values for calibration and sample windows.
-   * `calculate_window_data`: Extracts calibration and sample window data from a given row of time series data.
+   * `calculate_window_data`: Extract calibration and sample window data from a given row of time series data.
    * `Merge_data`: Merge de data from the window extraction with the attributes of interest.
-   * `align_to_zero`: Aligns each column of the DataFrame to its first value (zero index) by subtracting the first column from all subsequent columns.
-   * `balance_index`: Balances the dataset based on the features taking the minimum number of waveforms per bin.
+   * `align_to_zero`: Align each column of the DataFrame to its first value (zero index) by subtracting the first column from all subsequent columns.
+   * `balance_index`: Balance the dataset based on the features taking the minimum number of waveforms per bin.
 
-4. `functionalPCA.py`:
+4. `functionalPCA.py`: Include five functions for performing Functional Principal Component Analysis (FPCA), bootstrapping, visualizing the results, and calculating slopes.
+   * `fpca_two_inputs`: Perform Functional Principal Component Analysis (FPCA) on two sets of time series data from system 1 and system 2. Then, plot the first and second principal components along with the mean function (using `plot_all_time_series_and_mean_fpca`). Additionally, print the explained variance ratio and identify the time series that contribute most to each principal component.
+   * `first_component_extraction`: Extract the first principal component from two sets of time series data using FPCA.
+   * `bootstrap`: Conduct bootstrap resampling on the FPCA analysis using data from two systems, visualize the confidence intervals and the mean of all the first components, and generate a functional boxplot to ensure the stability of the first component.
+   * `create_pc_scores_plots`: Generate scatterplots for the functional principal component scores, coloring points based on focusing features, and print TestIDs with extreme scores in two systems.
+   * `visualize_regression`: Calculate the slopes of the regression lines for two systems' data.
 
-5. `functional_regression.py`:
+6. `functional_regression.py`:
+   * `Function_regression`: Perform functional regression by converting input time series data into functional data with a Fourier basis, fitting a regression model, printing all coefficients, and returning the fitted linear regression model (LinearRegression object).
+   * `coefficent_visualization`: Visualize coefficients of two functional regression models over a specified interval, focusing on features confirmed by Function_regression's output.
 
 You can import the functions using the following code:
 
