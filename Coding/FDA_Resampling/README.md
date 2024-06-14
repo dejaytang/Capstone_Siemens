@@ -4,20 +4,20 @@
 
 * **FDA_Resampling/**
   * **RawData/**
-  * **Centering_by_ColumnMeans/**
-  * * **Python/**
+  * [**Centering_by_ColumnMeans/**](https://github.com/dejaytang/Capstone_Siemens/tree/main/Coding/FDA_Resampling/Centering_by_ColumnMeans)
+  *   **Python/**
       * `RawData_CardAge.py`
       * `RawData_FluidTemperature.py`
       * `RawData_FluidType.py`
-  * * **HTML/**
-  * * **JupyterNotebook/**
-  * **StartingPoints_ZeroAligned/**
-  * * **Python/**
+  *  **HTML/**
+  *  **JupyterNotebook/**
+  * [**StartingPoints_ZeroAligned/**](https://github.com/dejaytang/Capstone_Siemens/tree/main/Coding/FDA_Resampling/StartingPoints_ZeroAligned)
+  * **Python/**
       * `ZeroStart_CardAge.py`
       * `ZeroStart_FluidTemperature.py`
       * `ZeroStart_FluidType.py`
-  * * **HTML/**
-  * * **JupyterNotebook/**
+  * **HTML/**
+  * **JupyterNotebook/**
   * `time_series_visualization.py`
   * `window_extraction.py`
   * `functionalPCA.py`
@@ -29,21 +29,18 @@ The code was written in Python and can be run on terminal using the '.py' files 
 
 ### Installation
 
-Use the  library [scikit-fda](https://fda.readthedocs.io/en/latest/):
+Use the  library [scikit-fda](https://fda.readthedocs.io/en/latest/): `pip install scikit-fda`
 
-  `pip install scikit-fda`
-
-## Usage custom functions
+### Usage custom functions
 
 To use the functions defined in `time_series_visualization.py`, `window_extraction.py`, `functionalPCA.py`, and `functional_regression.py` in the RawData_attribute.py and ZeroStart_attribute.py files, ensure to have them within the FDA_Resampling folder as shown in the project structure.
 
 **General Description**
 
-1. `time_series_visualization.py`: Includes three functions created for time series visualization.
-
-  * `plot_all_time_series`: Plot all the time series from a dataframe, where every row is a time series.
-  * `plot_all_time_series_and_mean_fpca`: Plot all the time series from a data frame and an additional time series. For the additional time series, two values must be provided, 'x_new' which is the array of timestamps and 'y-new' which is the array of values frome the timeseries.
-  * `plot_all_time_series_in_group`: Plot time series data from four dataframes in a 2x2 grid of subplots.
+1. `time_series_visualization.py`: Include three functions created for time series visualization.
+   * `plot_all_time_series`: Plot all the time series from a dataframe, where every row is a time series.
+   * `plot_all_time_series_and_mean_fpca`: Plot all the time series from a data frame and an additional time series(the default is the mean of all the time series). For the additional time series, two values must be provided, 'x_new' which is the array of timestamps and 'y-new' which is the array of values frome the timeseries.
+   * `plot_all_time_series_in_group`: Plot time series data from four dataframes in a 2x2 grid of subplots.
 
 2. `window_extraction.py`: Compress four functions related with the window extraction and data preprocessing steps.
    
