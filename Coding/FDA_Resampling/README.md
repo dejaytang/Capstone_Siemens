@@ -5,25 +5,19 @@
 * **FDA_Resampling/**
   * **RawData/**
   * **Centering_by_ColumnMeans/**
-    * `RawData_CardAge.py`
-    * `RawData_FluidTemperature.py`
-    * `RawData_FluidType.py`
-    * RawData_CardAge.ipynb
-    * RawData_FluidTemperature.ipynb
-    * RawData_FluidType.ipynb
-    * RawData_CardAge.html
-    * RawData_FluidTemperature.html
-    * RawData_FluidType.html
+  * * **Python/**
+      * `RawData_CardAge.py`
+      * `RawData_FluidTemperature.py`
+      * `RawData_FluidType.py`
+  * * **HTML/**
+  * * **JupyterNotebook/**
   * **StartingPoints_ZeroAligned/**
-    * `ZeroStart_CardAge.py`
-    * `ZeroStart_FluidTemperature.py`
-    * `ZeroStart_FluidType.py`
-    * ZeroStart_CardAge.ipynb
-    * ZeroStart_FluidTemperature.ipynb
-    * ZeroStart_FluidType.ipynb
-    * ZeroStart_CardAge.html
-    * ZeroStart_FluidTemperature.html
-    * ZeroStart_FluidType.html
+  * * **Python/**
+      * `ZeroStart_CardAge.py`
+      * `ZeroStart_FluidTemperature.py`
+      * `ZeroStart_FluidType.py`
+  * * **HTML/**
+  * * **JupyterNotebook/**
   * `time_series_visualization.py`
   * `window_extraction.py`
   * `functionalPCA.py`
