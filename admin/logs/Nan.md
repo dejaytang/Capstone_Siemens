@@ -292,3 +292,39 @@
 - Activity Type: Working on codes
 - Description: 
     - Discussed with Jessie and modified the available range
+
+## W7 Tuesday 2024/6/11
+- Time (hours): 2
+- Activity Type: Working on codes
+- Description: 
+    - Modified the optimization code
+
+## W7 Tuesday 2024/6/11
+- Time (hours): 0.5
+- Activity Type: Internal meeting
+- Description: 
+    - Shared findings with teammates
+
+## W7 Tuesday 2024/6/11
+- Time (hours): 0.75
+- Activity Type: Meeting with instructor
+- Description: 
+    - Presented current progress
+
+## W7 Wednesday 2024/6/12
+- Time (hours): 3
+- Activity Type: Working on codes
+- Description: 
+    - Modified the optimization code
+
+## W7 Thursday 2024/6/13
+- Time (hours): 2
+- Activity Type: Working on codes
+- Description: 
+    - Modified the optimization code and added the post window
+
+## W7 Thursday 2024/6/13
+- Time (hours): 1.5
+- Activity Type: Internal meeting
+- Description: 
+    - Discussed progress and next steps
