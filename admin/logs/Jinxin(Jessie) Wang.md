@@ -58,3 +58,4 @@
 |  7          | 12/06/2024      |      1      |  Individual Work | <ul><li> look over the coding structure example for the main task and provide feedback to the team member
 |  7          | 13/06/2024      |      4      |  Individual Work | <ul><li> Work on fixing the sensor B blood sample window optimization</li></ul><ul><li>technical issues for local laptop</li></ul><ul><li>entirely compress the warnings</li></ul><ul><li>modified steps for optimal option
 |  7          | 13/06/2024      |      1.5      |  Internal Meeting |<ul><li> went through the process and discuss the questions to ask Siemens tomorrow
+|  7          | 13/06/2024      |      2      |  Individual Work |<ul><li> Modified codings for adding .copy() in the function</li></ul><ul><li>investigation of t test formula</li></ul><ul><li>investigation of Regression analysis
