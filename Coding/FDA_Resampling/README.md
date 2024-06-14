@@ -5,19 +5,19 @@
 * **FDA_Resampling/**
   * **RawData/**
   * [**Centering_by_ColumnMeans/**](https://github.com/dejaytang/Capstone_Siemens/tree/main/Coding/FDA_Resampling/Centering_by_ColumnMeans)
-  *   **Python/**
-      * `RawData_CardAge.py`
-      * `RawData_FluidTemperature.py`
-      * `RawData_FluidType.py`
-  *  **HTML/**
-  *  **JupyterNotebook/**
+     *   **Python/**
+         * `RawData_CardAge.py`
+         * `RawData_FluidTemperature.py`
+         * `RawData_FluidType.py`
+     *  **HTML/**
+     *  **JupyterNotebook/**
   * [**StartingPoints_ZeroAligned/**](https://github.com/dejaytang/Capstone_Siemens/tree/main/Coding/FDA_Resampling/StartingPoints_ZeroAligned)
-  * **Python/**
-      * `ZeroStart_CardAge.py`
-      * `ZeroStart_FluidTemperature.py`
-      * `ZeroStart_FluidType.py`
-  * **HTML/**
-  * **JupyterNotebook/**
+      * **Python/**
+          * `ZeroStart_CardAge.py`
+          * `ZeroStart_FluidTemperature.py`
+          * `ZeroStart_FluidType.py`
+      * **HTML/**
+      * **JupyterNotebook/**
   * `time_series_visualization.py`
   * `window_extraction.py`
   * `functionalPCA.py`
