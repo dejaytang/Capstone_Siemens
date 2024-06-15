@@ -85,7 +85,7 @@ The following diagram shows the pipeline for the main task of waveform character
 ![Pipeline](Images/Flowchart_FDA_Resampling_Final.png)
 
 ## Results
-To briefly introduce the results in the file, we use the feature `Fluid_Temperature` from Sensor A's calibration window, demonstrating the expected plot after code execution, following group balancing.
+To briefly introduce the results in the file, we use the feature `Fluid_Temperature` from Sensor A's calibration window, demonstrating the expected plots after code execution:
 
 **Windows visualization**
 ![Windows_visualization](Images/windows_viz.png)
@@ -97,7 +97,9 @@ To briefly introduce the results in the file, we use the feature `Fluid_Temperat
 - Visualizing the comparison of the first component across different systems:![Comparison_across_Systems](Images/comparison_of_firstcomponent.png)
 - Visualization of the mean and boxplots of the first component:![boxplots](Images/average_and_boxplots_first_component.png)
 - Visualization of the eigenvalues (scores) colored-mapping by attributes:![eigenvalues_scores](Images/scores.png)
-- Simple Linear Regression slopes comparison:![SLR_slope](Images/SLR_table.png)
+- Simple Linear Regression slopes comparison:
+  
+  ![SLR_slope](Images/SLR_table.png)
 
 **Functional Regression**
 - Visualization of Functional Regression coefficients:![eigenvalues_scores](Images/functional_regression.png)
