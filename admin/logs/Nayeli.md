@@ -73,4 +73,6 @@
 | 7 - Thu    | 13/06/2024      |      2.5         |  README | <ul><li> Creating flowchart and collaborating on README file. </li></ul>|
 | 7 - Thu    | 13/06/2024      |      0.5         |  Coding | <ul><li> Updating windows titles and reorganizing files in the GitHub as peers suggestion. </li></ul>|
 | 7 - Thu    | 13/06/2024      |      0.2         |  Internal meeting | <ul><li> Presenting the flowchart for the pipeline for waveform characterization. </li></ul>|
+| 7 - Fri    | 14/06/2024      |      10.0         |  Final Report | <ul><li> Writing all the results for FPCA, appendix, references, ammending Data section and including visualizations. </li></ul>|
+
 
