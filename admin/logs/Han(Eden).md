@@ -508,9 +508,79 @@
 
 ------------------------------------
 ## W7 Monday 2024/6/10
-- Time (hours): 1
+- Time (hours): 5.5
 - Activity Type: 
 	- Code
 - Description: 
 	-Code
 		- Finish the pipeline
+
+## W7 Tuesday 2024/6/11
+- Time (hours): 6
+- Activity Type: 
+	- Code
+	- Meeting
+- Description: 
+	- Code
+		- Amend the pipeline
+- 	- Internal sub group meeting
+		- Discuss the reasonable way to make tiny adjustment on the code
+	- Internal meeting
+		- Discuss the method of optimization window placement
+		- Show latest result
+	- Instructor Meeting
+		- Present weekly report
+		- Update weekly report
+	
+## W7 Wednesday 2024/6/12
+- Time (hours): 4
+- Activity Type: 
+	- Code
+- Description: 
+	-Code
+		- Update the pipeline by group feedback
+		- Check the code
+		- Transform type of files
+
+## W7 Thursday 2024/6/13
+- Time (hours): 4
+- Activity Type: 
+	- Document
+	- Meeting
+- Description: 
+	- Document
+		- Work on the readme file
+	- Internal sub-group Meeting
+		- Discuss the structure about readme file and the final report
+
+## W7 Friday 2024/6/14
+- Time (hours): 5
+- Activity Type: 
+	- Document
+	- Meeting
+- Description: 
+	- Document
+		- Finish readme.md file
+		- Arrange the plots for the final report in excel
+	- Client Meeting
+		- Present latest finding
+		- Get feedback about the necessary content should be included in the final report 
+	
+## W7 Saturday 2024/6/15
+- Time (hours): 8
+- Activity Type: 
+	- Document
+- Description: 
+	- Document
+		- Summary the result of bootstrap, SLM, Functional Regression in final report
+
+## W7 Sunday 2024/6/16
+- Time (hours): -
+- Activity Type: 
+	- Code
+	- Document
+- Description: 
+	-Code
+		- Correct the code for the typo
+	- Document
+		- Write methodology
