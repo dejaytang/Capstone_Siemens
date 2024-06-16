@@ -328,3 +328,15 @@
 - Activity Type: Internal meeting
 - Description: 
     - Discussed progress and next steps
+
+## W7 Friday 2024/6/14
+- Time (hours): 1
+- Activity Type: Meeting with Siemens
+- Description: 
+    - Presented our progress
+
+## W7 Saturday 2024/6/15
+- Time (hours): 2
+- Activity Type: Working on codes
+- Description: 
+    - Applied new window values on FDA resampling analysis template
