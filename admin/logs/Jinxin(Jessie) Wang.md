@@ -60,4 +60,5 @@
 |  7          | 13/06/2024      |      1.5      |  Internal Meeting |<ul><li> went through the process and discuss the questions to ask Siemens tomorrow
 |  7          | 13/06/2024      |      2      |  Individual Work |<ul><li> Modified codings for adding .copy() in the function</li></ul><ul><li>investigation of t test formula</li></ul><ul><li>investigation of Regression analysis
 |  7          | 15/06/2024      |      1      |  Meeting with Siemens |<ul><li>report the current results and ask for guidence and feedbacks</li></ul><ul><li>discuss for the expectations and the final presentation schedule
-|  8         | 17/06/2024      |      3      |  Individual Work |<ul><li>investigating the insights from the FDA results after appling new window limits</li></ul><ul><li>summarize the weekly reports
+|  8         | 17/06/2024      |      5      |  Individual Work |<ul><li>investigating the insights from the FDA results after appling new window limits</li></ul><ul><li>summarize the weekly reports
+|  8         | 17/06/2024      |      1      |  Internal Meeting |<ul><li>Discuss about the final drafts and final folder structure and a few details in the whole analysis and report draft
