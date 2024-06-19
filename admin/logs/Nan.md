@@ -340,3 +340,27 @@
 - Activity Type: Working on codes
 - Description: 
     - Applied new window values on FDA resampling analysis template
+
+## W8 Monday 2024/6/17
+- Time (hours): 2
+- Activity Type: Working on report
+- Description: 
+    - Started drafting report for window optimization
+
+## W8 Tuesday 2024/6/18
+- Time (hours): 0.5
+- Activity Type: Meeting with instructor
+- Description: 
+    - Presented current progress
+
+## W8 Tuesday 2024/6/18
+- Time (hours): 2
+- Activity Type: Visualization
+- Description: 
+    - Completed visualizations summary for FPCA and slope analysis
+
+## W8 Wednesday 2024/6/19
+- Time (hours): 2
+- Activity Type: Working on git repo files
+- Description: 
+    - Modified readme.md for window_optimization file
