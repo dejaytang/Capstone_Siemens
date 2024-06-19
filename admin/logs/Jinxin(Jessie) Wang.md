@@ -64,3 +64,5 @@
 |  8         | 17/06/2024      |      1      |  Internal Meeting |<ul><li>Discuss about the final drafts and final folder structure and a few details in the whole analysis and report draft
 |  8         | 18/06/2024      |      2      |  Individual Work |<ul><li>Apply new window limits to Slope Comparision
 |  8         | 18/06/2024      |      1      |  Meeting with Cassie |<ul><li>Weekly Reporting
+|  8         | 18/06/2024      |      4      |  Meeting with Cassie |<ul><li>Working on Final Draft</li></ul><ul><li>Read through team member's distribution and provide comments</li></ul><ul><li>rearrange the introduction from proposal
+|  8         | 19/06/2024      |      2.5      |  Meeting with Cassie |<ul><li>amend the coding file and re-exported html files
