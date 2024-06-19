@@ -55,7 +55,11 @@
 |  7          | 11/06/2024      |      4.5      |  Individual Work | <ul><li> investigate about the interpretation of two approaches of preprocess the data</li></ul><ul><li>discuss with Siemens through chat for clarification about focus related to window optimization </li></ul><ul><li> modify the coding snipt for the window optimization
 |  7          | 11/06/2024      |      0.75      |  Weekly Meeting with Cassie | <ul><li> Summary of the project progress and next steps for the remaining two weeks</li></ul><ul><li>provide some interpretation for the preprocessing approaches
 |  7          | 11/06/2024      |      1.5      |  Individual Work | <ul><li> Discuss about the question list to Siemens and the draft code file for window optimization for their feedback
-|  7          | 12/06/2024      |      1      |  Individual Work | <ul><li> look over the coding structure example for the main task and provide feedback to the team member
+|  7          | 12/06/2024      |      2      |  Individual Work | <ul><li> look over the coding structure example for the main task and provide feedback to the team member
 |  7          | 13/06/2024      |      4      |  Individual Work | <ul><li> Work on fixing the sensor B blood sample window optimization</li></ul><ul><li>technical issues for local laptop</li></ul><ul><li>entirely compress the warnings</li></ul><ul><li>modified steps for optimal option
 |  7          | 13/06/2024      |      1.5      |  Internal Meeting |<ul><li> went through the process and discuss the questions to ask Siemens tomorrow
 |  7          | 13/06/2024      |      2      |  Individual Work |<ul><li> Modified codings for adding .copy() in the function</li></ul><ul><li>investigation of t test formula</li></ul><ul><li>investigation of Regression analysis
+|  7          | 15/06/2024      |      1      |  Meeting with Siemens |<ul><li>report the current results and ask for guidence and feedbacks</li></ul><ul><li>discuss for the expectations and the final presentation schedule
+|  8         | 17/06/2024      |      5      |  Individual Work |<ul><li>investigating the insights from the FDA results after appling new window limits</li></ul><ul><li>summarize the weekly reports
+|  8         | 17/06/2024      |      1      |  Internal Meeting |<ul><li>Discuss about the final drafts and final folder structure and a few details in the whole analysis and report draft
+|  8         | 18/06/2024      |      2      |  Individual Work |<ul><li>Apply new window limits to Slope Comparision
