@@ -63,3 +63,4 @@
 |  8         | 17/06/2024      |      5      |  Individual Work |<ul><li>investigating the insights from the FDA results after appling new window limits</li></ul><ul><li>summarize the weekly reports
 |  8         | 17/06/2024      |      1      |  Internal Meeting |<ul><li>Discuss about the final drafts and final folder structure and a few details in the whole analysis and report draft
 |  8         | 18/06/2024      |      2      |  Individual Work |<ul><li>Apply new window limits to Slope Comparision
+|  8         | 18/06/2024      |      1      |  Meeting with Cassie |<ul><li>Weekly Reporting
