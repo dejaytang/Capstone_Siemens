@@ -17,9 +17,9 @@ by creating a function that minimizes the regression slopes between System 1 and
 while keeping moving the current windows within certain limits. 
 
 ### 2.3. Visualization Results
-![SensorA](images/window_optimization_SensorA.png)
-![SensorB_cal](images/window_optimization_SensorB_Calwindow.png)
-![SensorB_sample](images/window_optimization_SensorB_Samplewindow.png)
+![SensorA](images/Window_Optimization_SensorA.png)
+![SensorB_cal](images/Window_Optimization_SensorB_Calwindow.png)
+![SensorB_sample](images/Window_Optimization_SensorB_Samplewindow.png)
 
 ## Raw Slope on New Windows
 Applied new window delimits of system 2 for slope calculations on raw data.
