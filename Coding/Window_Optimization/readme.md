@@ -21,10 +21,10 @@ while keeping moving the current windows within certain limits.
 ![SensorB_cal](images/Window_Optimization_SensorB_Calwindow.png)
 ![SensorB_sample](images/Window_Optimization_SensorB_Samplewindow.png)
 
-## Raw Slope on New Windows
+## 3. Raw Slope on New Windows
 Applied new window delimits of system 2 for slope calculations on raw data.
 See details at https://github.com/dejaytang/Capstone_Siemens/blob/main/Coding/Raw_Slope/README.md
 
-## FDA Resampling on New Windows
+## 4. FDA Resampling on New Windows
 Applied new window delimits of system 2 for functional data analysis on balanced data.
 See details at https://github.com/dejaytang/Capstone_Siemens/blob/main/Coding/FDA_Resampling/README.md
