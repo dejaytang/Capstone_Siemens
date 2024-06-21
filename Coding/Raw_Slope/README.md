@@ -46,4 +46,18 @@ The following diagram shows the pipeline for the main task of waveform character
 ![Pipeline](Images/Flowcharts.png)
 
 ## Results
-To briefly introduce the results in the file, we use the feature `Fluid_Temperature` from Sensor A's calibration window, demonstrating the expected plots after code execution:
+To briefly introduce the results in the file, we use the feature `Fluid_Temperature` from Sensor A and B's calibration and sample window, demonstrating the expected plots after code execution:
+
+### **Sensor A**
+- slope and standard error: ![Results](Images/Sensor_A_slopes.png)
+
+- slope visualization: ![Results](Images/Sensor_A_slope_plot.png)
+
+- T-test result assessing difference in slope between System 1 and 2: ![Results](Images/Sensor_A_ttest.png)
+
+### **Sensor B**
+- slope and standard error: ![Results](Images/Sensor_B_slopes.png)
+
+- slope visualization: ![Results](Images/Sensor_B_slope_plot.png)
+
+- T-test result assessing difference in slope between System 1 and 2: ![Results](Images/Sensor_B_ttest.png)

@@ -8,13 +8,13 @@ import matplotlib.pyplot as plt
 from raw_slope_functions import calculate_slopes_se, run_ttest
 
 # import datasets
-sensorA_System1 = pd.read_csv("RawData/System1_SensorA.csv")
-sensorA_System2 = pd.read_csv("RawData/System2_SensorA.csv")
-sensorB_System1 = pd.read_csv("RawData/System1_SensorB.csv")
-sensorB_System2 = pd.read_csv("RawData/System2_SensorB.csv")
-sensorA_System1_missing = pd.read_csv("RawData/SensorA_System1_missing values.csv")
-sensorA_System2_missing = pd.read_csv("RawData/SensorA_System2_missing values.csv")
-keyByTestID = pd.read_csv("RawData/Key by TestID.csv")
+sensorA_System1 = pd.read_csv("../../RawData/System1_SensorA.csv")
+sensorA_System2 = pd.read_csv("../../RawData/System2_SensorA.csv")
+sensorB_System1 = pd.read_csv("../../RawData/System1_SensorB.csv")
+sensorB_System2 = pd.read_csv("../../RawData/System2_SensorB.csv")
+sensorA_System1_missing = pd.read_csv("../../RawData/SensorA_System1_missing values.csv")
+sensorA_System2_missing = pd.read_csv("../../RawData/SensorA_System2_missing values.csv")
+keyByTestID = pd.read_csv("../../RawData/Key by TestID.csv")
 
 # Transpose dataset to make columns as timestamps and rows as tests
 A1_transposed = sensorA_System1.T.reset_index()
@@ -301,6 +301,9 @@ axes[0].set_xticks(range(len(labels)))
 axes[0].set_xticklabels(labels=labels, rotation=45)
 axes[0].legend(["System 1", "System 2"])
 axes[0].set_title("Slope within cal window")
+axes[0].set_ylabel("Slope")
+axes[0].set_xlabel("Fluid Type")
+
 
 axes[1].errorbar(range(len(labels)), Sensor_A_slopes["System-1-sample-slope"], yerr=Sensor_A_slopes["System-1-sample-se"], label="System 1", fmt='o', markersize=4, capsize=5)
 axes[1].errorbar(range(len(labels)), Sensor_A_slopes["System-2-sample-slope"], yerr=Sensor_A_slopes["System-2-sample-se"], label="System 2", fmt='o', markersize=4, capsize=5)
@@ -308,6 +311,8 @@ axes[1].set_xticks(range(len(labels)))
 axes[1].set_xticklabels(labels=labels, rotation=45)
 axes[1].legend(["System 1", "System 2"])
 axes[1].set_title("Slope within sample window")
+axes[1].set_ylabel("Slope")
+axes[1].set_xlabel("Fluid Type")
 
 for ax in axes:
     ax.axvline(x=3.5, color='r', linestyle='--')
@@ -348,6 +353,9 @@ axes[0].set_xticks(range(len(labels)))
 axes[0].set_xticklabels(labels=labels, rotation=45)
 axes[0].legend(["System 1", "System 2"])
 axes[0].set_title("Slope within cal window")
+axes[0].set_ylabel("Slope")
+axes[0].set_xlabel("Fluid Type")
+
 
 axes[1].errorbar(range(len(labels)), Sensor_B_slopes["System-1-sample-slope"], yerr=Sensor_B_slopes["System-1-sample-se"], label="System 1", fmt='o', markersize=4, capsize=5)
 axes[1].errorbar(range(len(labels)), Sensor_B_slopes["System-2-sample-slope"], yerr=Sensor_B_slopes["System-2-sample-se"], label="System 2", fmt='o', markersize=4, capsize=5)
@@ -355,6 +363,8 @@ axes[1].set_xticks(range(len(labels)))
 axes[1].set_xticklabels(labels=labels, rotation=45)
 axes[1].legend(["System 1", "System 2"])
 axes[1].set_title("Slope within sample window")
+axes[1].set_ylabel("Slope")
+axes[1].set_xlabel("Fluid Type")
 
 for ax in axes:
     ax.axvline(x=3.5, color='r', linestyle='--')
