@@ -29,7 +29,7 @@
 
 #!pip install scikit-fda
 import os
-os.chdir("..")
+os.chdir("../..")
 
 
 # In[2]:
@@ -584,10 +584,18 @@ create_pc_scores_plots(pc_scores_s1_B_sample_window, pc_scores_s2_B_sample_windo
 
 
 df_list = []
-
-def append_to_dataframe(window_name, slope1, slope2):
+def append_to_dataframe(window_name, slope1, slope2,se1,se2,n,p):
+    """
+    Append regression analysis results to a global dataframe list.
+    
+    """
     global df_list
-    df_list.append({'Window': window_name, 'Slope 1': slope1, 'Slope 2': slope2})
+    df_list.append({'Window': window_name, 'Slope 1': slope1, 'Slope 2': slope2,'Se 1': se1, 'Se 2': se2, "N": n,"p_value":p})
+
+
+# In[24]:
+
+
 append_to_dataframe('A_cal_window', *visualize_regression(fpca_s1_A_cal_window, fpca_s2_A_cal_window))
 append_to_dataframe('A_sample_window', *visualize_regression(fpca_s1_A_sample_window, fpca_s2_A_sample_window))
 append_to_dataframe('B_cal_window', *visualize_regression(fpca_s1_B_cal_window, fpca_s2_B_cal_window))
@@ -596,11 +604,12 @@ append_to_dataframe('B_sample_window', *visualize_regression(fpca_s1_B_sample_wi
 
 # ### Slopes Results Comparison for one sample
 
-# In[24]:
+# In[25]:
 
 
-slopes_df = pd.DataFrame(df_list)
-slopes_df
+df = pd.DataFrame(df_list)
+df.set_index("Window",inplace = True)
+df[["Slope 1","Slope 2","p_value"]]
 
 
 # # 5. Functional Regression
@@ -616,7 +625,7 @@ slopes_df
 
 # #### Cal window
 
-# In[25]:
+# In[26]:
 
 
 print("System 1:")
@@ -628,7 +637,7 @@ A2_cal_window_funct_reg = Function_regression(A2_cal_window_combine_balanced,40,
 
 # #### Sample window
 
-# In[26]:
+# In[27]:
 
 
 print("System 1:")
@@ -642,7 +651,7 @@ A2_sample_window_funct_reg = Function_regression(A2_sample_window_combine_balanc
 
 # #### Cal window
 
-# In[27]:
+# In[28]:
 
 
 print("System 1:")
@@ -654,7 +663,7 @@ B2_cal_window_funct_reg = Function_regression(B2_cal_window_combine_balanced,90,
 
 # #### Sample window
 
-# In[28]:
+# In[29]:
 
 
 print("System 1:")
@@ -670,7 +679,7 @@ B2_sample_window_funct_reg = Function_regression(B2_sample_window_combine_balanc
 
 # #### Cal window
 
-# In[29]:
+# In[30]:
 
 
 coefficent_visualization(A1_cal_window_funct_reg,A2_cal_window_funct_reg,["FluidType"],range(1,36),"SensorA Cal window")
@@ -678,7 +687,7 @@ coefficent_visualization(A1_cal_window_funct_reg,A2_cal_window_funct_reg,["Fluid
 
 # #### Sample window
 
-# In[30]:
+# In[31]:
 
 
 coefficent_visualization(A1_sample_window_funct_reg,A2_sample_window_funct_reg,["FluidType"],range(1,23),"SensorA sample window")
@@ -688,7 +697,7 @@ coefficent_visualization(A1_sample_window_funct_reg,A2_sample_window_funct_reg,[
 
 # #### Cal window
 
-# In[31]:
+# In[32]:
 
 
 coefficent_visualization(B1_cal_window_funct_reg,B2_cal_window_funct_reg,["FluidType"],range(1,86),"SensorB Cal window")
@@ -696,7 +705,7 @@ coefficent_visualization(B1_cal_window_funct_reg,B2_cal_window_funct_reg,["Fluid
 
 # #### Sample window
 
-# In[32]:
+# In[33]:
 
 
 coefficent_visualization(B1_sample_window_funct_reg, B2_sample_window_funct_reg, ["FluidType"], range(1, 16), "SensorB Sample window")
