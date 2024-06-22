@@ -30,7 +30,7 @@
 
 #!pip install scikit-fda
 import os
-os.chdir("..")
+os.chdir("../..")
 
 
 # In[2]:
@@ -591,6 +591,188 @@ create_pc_scores_plots(pc_scores_s1_B_cal_window, pc_scores_s2_B_cal_window, B1_
 # In[23]:
 
 
+def create_pc_scores_plots(pc_scores_s1, pc_scores_s2, features_s1, features_s2, features):
+    """
+    Creates scatterplots for the functional principal component scores mapping with colors the additional features for every TestID for two systems.
+
+    Parameters:
+    pc_scores_s1 (pd.DataFrame): A pandas DataFrame representing the functional principal component scores for System 1.
+    pc_scores_s2 (pd.DataFrame): A pandas DataFrame representing the functional principal component scores for System 2.
+    features_s1 (pd.DataFrame): A pandas DataFrame representing additional features for System 1.
+    features_s2 (pd.DataFrame): A pandas DataFrame representing additional features for System 2.
+
+    Returns:
+    scatterplots: A concatenated chart containing scatterplots of the functional principal component scores combined with additional features for both systems.
+    """
+    # --- Scores combined with Additional Features ---
+    # Reset the index, making the index a column in the DataFrame
+    pc_scores_s1_reset = pc_scores_s1.reset_index()
+    pc_scores_s2_reset = pc_scores_s2.reset_index()
+    pc_scores_s1_reset.rename(columns={'index': 'TestID'}, inplace=True)
+    pc_scores_s2_reset.rename(columns={'index': 'TestID'}, inplace=True)
+
+    # Merging functional pc scores and additional features by TestID
+    system1_scores_merged = pd.merge(pc_scores_s1_reset, features_s1, how='inner', on=['TestID'])
+    system2_scores_merged = pd.merge(pc_scores_s2_reset, features_s2, how='inner', on=['TestID'])
+
+    selected_columns = ['TestID', 'PC1_Scores','PC2_Scores', 'FluidTypeBin', 'CardAgeBin', 'FluidTempBin','FluidType']
+    data_s1 = system1_scores_merged[selected_columns].copy()
+    data_s2 = system2_scores_merged[selected_columns].copy()
+
+    # Combine data to get the overall min and max for both axes
+    combined_data = pd.concat([data_s1, data_s2])
+
+    # Determine the range for x and y axes
+    min_x = combined_data['PC1_Scores'].min()
+    max_x = combined_data['PC1_Scores'].max()
+    min_y = combined_data['PC2_Scores'].min()
+    max_y = combined_data['PC2_Scores'].max()
+
+    # --- Visualizations ---
+    # System 1
+    if features == "FluidType":
+        scatter_fluid_s1 = alt.Chart(data_s1).mark_circle().encode(
+            alt.X('PC1_Scores', title="Scores FPC1", scale=alt.Scale(domain=[min_x, max_x])),
+            alt.Y('PC2_Scores', title="Scores FPC2", scale=alt.Scale(domain=[min_y, max_y])),
+            color=alt.Color("FluidType", scale=alt.Scale(scheme='paired'), title="Fluid"),
+            tooltip=['TestID', 'PC1_Scores', 'PC2_Scores', alt.Tooltip("FluidType", title="Fluid Type")]
+        ).properties(
+            title='Fluid Type',
+            width=580,
+            height=280
+        )
+    else:
+        scatter_fluid_s1 = alt.Chart(data_s1).mark_circle().encode(
+            alt.X('PC1_Scores', title="Scores FPC1", scale=alt.Scale(domain=[min_x, max_x])),
+            alt.Y('PC2_Scores', title="Scores FPC2", scale=alt.Scale(domain=[min_y, max_y])),
+            color=alt.Color("FluidTypeBin", scale=alt.Scale(scheme='paired'), title="Fluid"),
+            tooltip=['TestID', 'PC1_Scores', 'PC2_Scores', alt.Tooltip("FluidTypeBin", title="Fluid Type")]
+        ).properties(
+            title='Fluid Type',
+            width=580,
+            height=280
+        )
+
+    scatter_age_s1 = alt.Chart(data_s1).mark_circle().encode(
+        alt.X('PC1_Scores', title="Scores FPC1", scale=alt.Scale(domain=[min_x, max_x])),
+        alt.Y('PC2_Scores', title="Scores FPC2", scale=alt.Scale(domain=[min_y, max_y])),
+        color=alt.Color('CardAgeBin', scale=alt.Scale(scheme='paired'), title="Days"),
+        tooltip=['TestID', 'PC1_Scores', 'PC2_Scores', alt.Tooltip('CardAgeBin', title="Card Age")]
+    ).properties(
+        title='Card Age',
+        width=580,
+        height=280
+    )
+
+    scatter_fluidTemp_s1 = alt.Chart(data_s1).mark_circle().encode(
+        alt.X('PC1_Scores', title="Scores FPC1", scale=alt.Scale(domain=[min_x, max_x])),
+        alt.Y('PC2_Scores', title="Scores FPC2", scale=alt.Scale(domain=[min_y, max_y])),
+        color=alt.Color('FluidTempBin', scale=alt.Scale(scheme='category10'), title="°C"),
+        tooltip=['TestID', 'PC1_Scores', 'PC2_Scores', alt.Tooltip('FluidTempBin', title="Fluid Temperature")]
+    ).properties(
+        title='Fluid Temperature',
+        width=580,
+        height=280
+    )
+
+    # System 2
+    if features == "FluidType":
+        scatter_fluid_s2 = alt.Chart(data_s2).mark_circle().encode(
+            alt.X('PC1_Scores', title="Scores FPC1", scale=alt.Scale(domain=[min_x, max_x])),
+            alt.Y('PC2_Scores', title="Scores FPC2", scale=alt.Scale(domain=[min_y, max_y])),
+            color=alt.Color("FluidType", scale=alt.Scale(scheme='paired'), title="Fluid"),
+            tooltip=['TestID', 'PC1_Scores', 'PC2_Scores', alt.Tooltip("FluidType", title="Fluid Type")]
+        ).properties(
+            title='Fluid Type',
+            width=580,
+            height=280
+        )
+    else:
+        scatter_fluid_s2 = alt.Chart(data_s2).mark_circle().encode(
+            alt.X('PC1_Scores', title="Scores FPC1", scale=alt.Scale(domain=[min_x, max_x])),
+            alt.Y('PC2_Scores', title="Scores FPC2", scale=alt.Scale(domain=[min_y, max_y])),
+            color=alt.Color("FluidTypeBin", scale=alt.Scale(scheme='paired'), title="Fluid"),
+            tooltip=['TestID', 'PC1_Scores', 'PC2_Scores', alt.Tooltip("FluidTypeBin", title="Fluid Type")]
+        ).properties(
+            title='Fluid Type',
+            width=580,
+            height=280
+        )
+
+    scatter_age_s2 = alt.Chart(data_s2).mark_circle().encode(
+        alt.X('PC1_Scores', title="Scores FPC1", scale=alt.Scale(domain=[min_x, max_x])),
+        alt.Y('PC2_Scores', title="Scores FPC2", scale=alt.Scale(domain=[min_y, max_y])),
+        color=alt.Color('CardAgeBin', scale=alt.Scale(scheme='paired'), title="Days"),
+        tooltip=['TestID', 'PC1_Scores', 'PC2_Scores', alt.Tooltip('CardAgeBin', title="Card Age")]
+    ).properties(
+        title='Card Age',
+        width=580,
+        height=280
+    )
+
+    scatter_fluidTemp_s2 = alt.Chart(data_s2).mark_circle().encode(
+        alt.X('PC1_Scores', title="Scores FPC1", scale=alt.Scale(domain=[min_x, max_x])),
+        alt.Y('PC2_Scores', title="Scores FPC2", scale=alt.Scale(domain=[min_y, max_y])),
+        color=alt.Color('FluidTempBin', scale=alt.Scale(scheme='category10'), title="°C"),
+        tooltip=['TestID', 'PC1_Scores', 'PC2_Scores', alt.Tooltip('FluidTempBin', title="Fluid Temperature")]
+    ).properties(
+        title='Fluid Temperature',
+        width=580,
+        height=280
+    )
+
+    # --- Display the plots ---
+    # System 1 plots
+    if features == "FluidType" or features == "FluidTypeBin":
+        s1_plots = alt.hconcat(
+            scatter_fluid_s1, scatter_age_s1, scatter_fluidTemp_s1
+        ).resolve_scale(
+            color='independent'
+        ).properties(
+            title='System 1'
+        )
+
+        # System 2 plots
+        s2_plots = alt.hconcat(
+            scatter_fluid_s2, scatter_age_s2, scatter_fluidTemp_s2
+        ).resolve_scale(
+            color='independent'
+        ).properties(
+            title='System 2'
+        )
+    elif features == "FluidTempBin":
+        s1_plots = alt.hconcat(
+            scatter_fluidTemp_s1, scatter_fluid_s1, scatter_age_s1
+        ).resolve_scale(
+            color='independent'
+        ).properties(
+            title='System 1'
+        )
+
+        # System 2 plots
+        s2_plots = alt.hconcat(
+            scatter_fluidTemp_s2, scatter_fluid_s2, scatter_age_s2
+        ).resolve_scale( color='independent'
+        ).properties(
+            title='System 2'
+        )
+        
+    plots_vconcatenated = alt.vconcat(s1_plots, s2_plots).configure_view(
+        stroke=None
+    )
+
+    return plots_vconcatenated
+
+
+# In[24]:
+
+
+create_pc_scores_plots(pc_scores_s1_B_cal_window, pc_scores_s2_B_cal_window, B1_cal_window_combine_balanced, B2_cal_window_combine_balanced,features="FluidType")
+
+
+# In[25]:
+
+
 pc_scores_s1_B_sample_window, pc_scores_s2_B_sample_window,fpca_s1_B_sample_window,fpca_s2_B_sample_window = fpca_two_inputs(B1_sample_window_combine_balanced.iloc[:,:-6], B2_sample_window_combine_balanced.iloc[:,:-6], color_fpc1_s1='tab:blue', color_fpc2_s1='tab:cyan', color_fpc1_s2='tab:orange', color_fpc2_s2='gold')
 print("--------------------------------------------------- Bootstrap -------------------------------------------------------------------------------------------")
 bs1,bs2 = bootstrap(B1_sample_window_combine_balanced, B2_sample_window_combine_balanced, "B","sample_window",features="FluidType")
@@ -602,14 +784,22 @@ create_pc_scores_plots(pc_scores_s1_B_sample_window, pc_scores_s2_B_sample_windo
 
 # ### R-square and visualization
 
-# In[24]:
+# In[27]:
 
 
 df_list = []
-
-def append_to_dataframe(window_name, slope1, slope2):
+def append_to_dataframe(window_name, slope1, slope2,se1,se2,n,p):
+    """
+    Append regression analysis results to a global dataframe list.
+    
+    """
     global df_list
-    df_list.append({'Window': window_name, 'Slope 1': slope1, 'Slope 2': slope2})
+    df_list.append({'Window': window_name, 'Slope 1': slope1, 'Slope 2': slope2,'Se 1': se1, 'Se 2': se2, "N": n,"p_value":p})
+
+
+# In[28]:
+
+
 append_to_dataframe('A_cal_window', *visualize_regression(fpca_s1_A_cal_window, fpca_s2_A_cal_window))
 append_to_dataframe('A_sample_window', *visualize_regression(fpca_s1_A_sample_window, fpca_s2_A_sample_window))
 append_to_dataframe('B_cal_window', *visualize_regression(fpca_s1_B_cal_window, fpca_s2_B_cal_window))
@@ -618,7 +808,7 @@ append_to_dataframe('B_sample_window', *visualize_regression(fpca_s1_B_sample_wi
 
 # ### Slopes Results Comparison for one sample
 
-# In[25]:
+# In[29]:
 
 
 slopes_df = pd.DataFrame(df_list)
@@ -638,7 +828,7 @@ slopes_df
 
 # #### Cal window
 
-# In[26]:
+# In[30]:
 
 
 print("System 1:")
@@ -650,7 +840,7 @@ A2_cal_window_funct_reg = Function_regression(A2_cal_window_combine_balanced,40,
 
 # #### Sample window
 
-# In[27]:
+# In[31]:
 
 
 print("System 1:")
@@ -664,7 +854,7 @@ A2_sample_window_funct_reg = Function_regression(A2_sample_window_combine_balanc
 
 # #### Cal window
 
-# In[28]:
+# In[32]:
 
 
 print("System 1:")
@@ -676,7 +866,7 @@ B2_cal_window_funct_reg = Function_regression(B2_cal_window_combine_balanced,90,
 
 # #### Sample window
 
-# In[29]:
+# In[33]:
 
 
 print("System 1:")
@@ -692,7 +882,7 @@ B2_sample_window_funct_reg = Function_regression(B2_sample_window_combine_balanc
 
 # #### Cal window
 
-# In[30]:
+# In[34]:
 
 
 coefficent_visualization(A1_cal_window_funct_reg,A2_cal_window_funct_reg,["FluidType"],range(1,36),"SensorA Cal window")
@@ -700,7 +890,7 @@ coefficent_visualization(A1_cal_window_funct_reg,A2_cal_window_funct_reg,["Fluid
 
 # #### Sample window
 
-# In[31]:
+# In[35]:
 
 
 coefficent_visualization(A1_sample_window_funct_reg,A2_sample_window_funct_reg,["FluidType"],range(1,23),"SensorA sample window")
@@ -710,7 +900,7 @@ coefficent_visualization(A1_sample_window_funct_reg,A2_sample_window_funct_reg,[
 
 # #### Cal window
 
-# In[32]:
+# In[36]:
 
 
 coefficent_visualization(B1_cal_window_funct_reg,B2_cal_window_funct_reg,["FluidType"],range(1,86),"SensorB Cal window")
@@ -718,7 +908,7 @@ coefficent_visualization(B1_cal_window_funct_reg,B2_cal_window_funct_reg,["Fluid
 
 # #### Sample window
 
-# In[33]:
+# In[37]:
 
 
 coefficent_visualization(B1_sample_window_funct_reg, B2_sample_window_funct_reg, ["FluidType"], range(1, 16), "SensorB Sample window")

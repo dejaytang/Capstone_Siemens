@@ -25,15 +25,15 @@
 #    - 5.1. Regression coefficients
 #    - 5.2. Coefficients visualization
 
-# In[1]:
+# In[2]:
 
 
 #!pip install scikit-fda
 import os
-os.chdir("..")
+os.chdir("../..")
 
 
-# In[2]:
+# In[3]:
 
 
 # Import libraries
@@ -63,7 +63,7 @@ from functional_regression import Function_regression, coefficent_visualization
 
 # The path of the files can be change based on where the data is stored.
 
-# In[3]:
+# In[4]:
 
 
 # Import datasets
@@ -80,7 +80,7 @@ keyByTestID = pd.read_csv("RawData/Key by TestID.csv", parse_dates=['DateTime'])
 
 # ## 2.1. Data wrangling on time series
 
-# In[4]:
+# In[5]:
 
 
 # Transpose dataset to make columns as timestamps and rows as tests
@@ -124,7 +124,7 @@ B2_transposed = B2_transposed.drop(0)
 B2_transposed['TestID'] = B2_transposed['TestID'].astype(int)
 
 
-# In[5]:
+# In[6]:
 
 
 # Complete A1 and A2 with the missing values
@@ -136,7 +136,7 @@ A2_transposed = pd.concat([A2_transposed_mid, A2_missing_transposed], axis=0)
 
 # ## 2.2. Data wrangling on additional features
 
-# In[6]:
+# In[7]:
 
 
 # Relabeling System Values
@@ -165,7 +165,7 @@ keyByTestID = keyByTestID[keyByTestID['ReturnCode'].isin(['Success','UnderReport
 
 # ## 2.3. Merging time series datasets to add additional features
 
-# In[7]:
+# In[8]:
 
 
 # Merge dataset with keyByTestID and delete unmatched tests
@@ -203,7 +203,7 @@ print('B2: ', B2_Merged.shape)
 
 # ### 2.3.1. Removal of testID only exists in one sensor
 
-# In[8]:
+# In[9]:
 
 
 # Note: Only run once. If not, restart the kernel and run from the beggining again.
@@ -220,7 +220,7 @@ print('B2: ', B2_Merged.shape)
 
 # # 3. Window extraction
 
-# In[9]:
+# In[10]:
 
 
 # Match window values of Sensor A for each test
@@ -291,7 +291,7 @@ B2_Merged['sample_window_start'], B2_Merged['sample_window_end'] = zip(*B2_Merge
 ))
 
 
-# In[10]:
+# In[11]:
 
 
 # Adds TestIDs as index to the values post-window extraction 
@@ -354,7 +354,7 @@ B2_cal_window.set_index('TestID',inplace=True)
 
 # ## 3.1. Validating if there are partial or full missing values after the extraction
 
-# In[11]:
+# In[12]:
 
 
 A1_cal_window_drop_index = A1_cal_window.loc[A1_cal_window.isna().sum(axis=1)!=0].index
@@ -383,7 +383,7 @@ print("The missing value in sample window:",B2_sample_window_drop_index)
 
 # ## 3.2. Validating data shape post-window extraction
 
-# In[12]:
+# In[13]:
 
 
 # Set index for Merge datasets
@@ -426,7 +426,7 @@ B2_cal_window = B2_cal_window[~B2_cal_window.index.isna()]
 B2_sample_window = B2_sample_window[~B2_sample_window.index.isna()]
 
 
-# In[13]:
+# In[14]:
 
 
 # Shape of the subsets of time series after the extraction from the windows
@@ -449,7 +449,7 @@ print('B2_sample_window: ', B2_sample_window.shape)
 
 # ## 3.3. Scaling the post-window data: zero-alignment
 
-# In[14]:
+# In[15]:
 
 
 # Cal Window
@@ -470,7 +470,7 @@ B2_sample_window_zero = align_to_zero(B2_sample_window)
 
 # ## 3.4. Merging scaled data with additional attributes of interest
 
-# In[15]:
+# In[16]:
 
 
 # Combine data: Merge the zero-aligned time series with "FluidType", "AgeOfCardInDaysAtTimeOfTest", "Fluid_Temperature_Filled", "FluidTypeBin", "CardAgeBin", "FluidTempBin"
@@ -490,13 +490,13 @@ B2_sample_window_combine = Merge_data(B2_sample_window_zero,B2_Merged)
 
 # ## 3.5. Balancing the specific attributes
 
-# In[16]:
+# In[17]:
 
 
 System1_Index, System2_Index =  balance_index(A1_cal_window_combine,A2_cal_window_combine,"CardAgeBin")
 
 
-# In[17]:
+# In[18]:
 
 
 # Balanced data
@@ -517,7 +517,7 @@ B2_sample_window_combine_balanced = B2_sample_window_combine.loc[System2_Index]
 
 # #### System 1 and System 2: Sensor A - Cal and Sample Windows
 
-# In[18]:
+# In[19]:
 
 
 # Plot all the balanced time series from the window extraction
@@ -526,7 +526,7 @@ plot_all_time_series_in_group(A1_cal_window_combine_balanced, A1_sample_window_c
 
 # #### System 1 and System 2: Sensor B - Cal and Sample Windows
 
-# In[19]:
+# In[20]:
 
 
 # Plot all the balanced time series from the window extraction
@@ -552,7 +552,7 @@ plot_all_time_series_in_group(B1_cal_window_combine_balanced, B1_sample_window_c
 
 # ### System 1 versus System 2: Sensor A - Cal Window
 
-# In[20]:
+# In[21]:
 
 
 pc_scores_s1_A_cal_window, pc_scores_s2_A_cal_window,fpca_s1_A_cal_window,fpca_s2_A_cal_window = fpca_two_inputs(A1_cal_window_combine_balanced.iloc[:,:-6], A2_cal_window_combine_balanced.iloc[:,:-6], color_fpc1_s1='tab:blue', color_fpc2_s1='tab:cyan', color_fpc1_s2='tab:orange', color_fpc2_s2='gold')
@@ -564,7 +564,7 @@ create_pc_scores_plots(pc_scores_s1_A_cal_window, pc_scores_s2_A_cal_window, A1_
 
 # ### System 1 versus System 2: Sensor A - Sample Window
 
-# In[21]:
+# In[22]:
 
 
 pc_scores_s1_A_sample_window, pc_scores_s2_A_sample_window,fpca_s1_A_sample_window,fpca_s2_A_sample_window = fpca_two_inputs(A1_sample_window_combine_balanced.iloc[:,:-6], A2_sample_window_combine_balanced.iloc[:,:-6], color_fpc1_s1='tab:blue', color_fpc2_s1='tab:cyan', color_fpc1_s2='tab:orange', color_fpc2_s2='gold')
@@ -576,7 +576,7 @@ create_pc_scores_plots(pc_scores_s1_A_sample_window, pc_scores_s2_A_sample_windo
 
 # ### System 1 versus System 2: Sensor B - Cal Window
 
-# In[22]:
+# In[23]:
 
 
 pc_scores_s1_B_cal_window, pc_scores_s2_B_cal_window,fpca_s1_B_cal_window,fpca_s2_B_cal_window = fpca_two_inputs(B1_cal_window_combine_balanced.iloc[:,:-6], B2_cal_window_combine_balanced.iloc[:,:-6], color_fpc1_s1='tab:blue', color_fpc2_s1='tab:cyan', color_fpc1_s2='tab:orange', color_fpc2_s2='gold')
@@ -588,7 +588,7 @@ create_pc_scores_plots(pc_scores_s1_B_cal_window, pc_scores_s2_B_cal_window, B1_
 
 # ### System 1 versus System 2: Sensor B - Sample Window
 
-# In[23]:
+# In[24]:
 
 
 pc_scores_s1_B_sample_window, pc_scores_s2_B_sample_window,fpca_s1_B_sample_window,fpca_s2_B_sample_window = fpca_two_inputs(B1_sample_window_combine_balanced.iloc[:,:-6], B2_sample_window_combine_balanced.iloc[:,:-6], color_fpc1_s1='tab:blue', color_fpc2_s1='tab:cyan', color_fpc1_s2='tab:orange', color_fpc2_s2='gold')
@@ -602,14 +602,22 @@ create_pc_scores_plots(pc_scores_s1_B_sample_window, pc_scores_s2_B_sample_windo
 
 # ### R-square and visualization
 
-# In[24]:
+# In[25]:
 
 
 df_list = []
-
-def append_to_dataframe(window_name, slope1, slope2):
+def append_to_dataframe(window_name, slope1, slope2,se1,se2,n,p):
+    """
+    Append regression analysis results to a global dataframe list.
+    
+    """
     global df_list
-    df_list.append({'Window': window_name, 'Slope 1': slope1, 'Slope 2': slope2})
+    df_list.append({'Window': window_name, 'Slope 1': slope1, 'Slope 2': slope2,'Se 1': se1, 'Se 2': se2, "N": n,"p_value":p})
+
+
+# In[26]:
+
+
 append_to_dataframe('A_cal_window', *visualize_regression(fpca_s1_A_cal_window, fpca_s2_A_cal_window))
 append_to_dataframe('A_sample_window', *visualize_regression(fpca_s1_A_sample_window, fpca_s2_A_sample_window))
 append_to_dataframe('B_cal_window', *visualize_regression(fpca_s1_B_cal_window, fpca_s2_B_cal_window))
@@ -618,7 +626,7 @@ append_to_dataframe('B_sample_window', *visualize_regression(fpca_s1_B_sample_wi
 
 # ### Slopes Results Comparison for one sample
 
-# In[25]:
+# In[27]:
 
 
 slopes_df = pd.DataFrame(df_list)
@@ -638,7 +646,7 @@ slopes_df
 
 # #### Cal window
 
-# In[26]:
+# In[28]:
 
 
 print("System 1:")
@@ -650,7 +658,7 @@ A2_cal_window_funct_reg = Function_regression(A2_cal_window_combine_balanced,40,
 
 # #### Sample window
 
-# In[27]:
+# In[29]:
 
 
 print("System 1:")
@@ -664,7 +672,7 @@ A2_sample_window_funct_reg = Function_regression(A2_sample_window_combine_balanc
 
 # #### Cal window
 
-# In[28]:
+# In[30]:
 
 
 print("System 1:")
@@ -676,7 +684,7 @@ B2_cal_window_funct_reg = Function_regression(B2_cal_window_combine_balanced,90,
 
 # #### Sample window
 
-# In[29]:
+# In[31]:
 
 
 print("System 1:")
@@ -692,7 +700,7 @@ B2_sample_window_funct_reg = Function_regression(B2_sample_window_combine_balanc
 
 # #### Cal window
 
-# In[30]:
+# In[32]:
 
 
 coefficent_visualization(A1_cal_window_funct_reg,A2_cal_window_funct_reg,["AgeOfCardInDaysAtTimeOfTest"],range(1,36),"SensorA Cal window")
@@ -700,7 +708,7 @@ coefficent_visualization(A1_cal_window_funct_reg,A2_cal_window_funct_reg,["AgeOf
 
 # #### Sample window
 
-# In[31]:
+# In[33]:
 
 
 coefficent_visualization(A1_sample_window_funct_reg,A2_sample_window_funct_reg,["AgeOfCardInDaysAtTimeOfTest"],range(1,23),"SensorA sample window")
@@ -710,7 +718,7 @@ coefficent_visualization(A1_sample_window_funct_reg,A2_sample_window_funct_reg,[
 
 # #### Cal window
 
-# In[32]:
+# In[34]:
 
 
 coefficent_visualization(B1_cal_window_funct_reg,B2_cal_window_funct_reg,["AgeOfCardInDaysAtTimeOfTest"],range(1,86),"SensorB Cal window")
@@ -718,7 +726,7 @@ coefficent_visualization(B1_cal_window_funct_reg,B2_cal_window_funct_reg,["AgeOf
 
 # #### Sample window
 
-# In[33]:
+# In[35]:
 
 
 coefficent_visualization(B1_sample_window_funct_reg, B2_sample_window_funct_reg, ["AgeOfCardInDaysAtTimeOfTest"], range(1, 16), "SensorB Sample window")
