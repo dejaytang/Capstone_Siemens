@@ -6,6 +6,10 @@ os.chdir("..")
 import pandas as pd
 import matplotlib.pyplot as plt
 from raw_slope_functions import calculate_slopes_se, run_ttest
+from window_extraction import calculate_window_values, calculate_window_data, Merge_data, align_to_zero, balance_index
+from time_series_visualization import plot_all_time_series, plot_all_time_series_and_mean_fpca, plot_all_time_series_in_group
+from functionalPCA import fpca_two_inputs, first_component_extraction, bootstrap, create_pc_scores_plots, visualize_regression
+from functional_regression import Function_regression, coefficent_visualization
 
 # import datasets
 sensorA_System1 = pd.read_csv("RawData/System1_SensorA.csv")
@@ -87,89 +91,84 @@ B1_transposed = B2_transposed[B2_transposed['TestID'].isin(A2_Merged['TestID'])]
 sensorB_System1 = sensorB_System1.loc[:, sensorB_System1.columns.isin(B1_Merged['TestID'].astype(str))]
 sensorB_System2 = sensorB_System2.loc[:, sensorB_System2.columns.isin(B2_Merged['TestID'].astype(str))]
 
-# Match window values of Sensor A for each test
-calDelimit = 9.6
+# Sensor A System 1
+calDelimit = 11
 cal_window_size = 8
-sampleDelimit = 17.2
+sampleDelimit = 15
 sample_window_size = 5
 
-# Define a function to calculate window start and end values
-def calculate_window_values(bubble_start, sample_start, calDelimit, cal_window_size, sampleDelimit, sample_window_size):
-    cal_window_start = bubble_start - calDelimit
-    cal_window_end = cal_window_start + cal_window_size
-    sample_window_start = sample_start + sampleDelimit
-    sample_window_end = sample_window_start + sample_window_size
-    return round(cal_window_start,1), round(cal_window_end,1), round(sample_window_start,1), round(sample_window_end,1)
-
-# For sensor A in system 1
-cal_window_start, cal_window_end, sample_window_start, sample_window_end = calculate_window_values(bubble_start = A1_Merged['BubbleDetectTime'],
-                                                                                                   sample_start = A1_Merged['SampleDetectTime'],
-                                                                                                   calDelimit = calDelimit,
-                                                                                                   cal_window_size = cal_window_size,
-                                                                                                   sampleDelimit = sampleDelimit,
-                                                                                                   sample_window_size = sample_window_size
-                                                                                                   )
+cal_window_start, cal_window_end, sample_window_start, sample_window_end = calculate_window_values(bubble_start=A1_Merged['BubbleDetectTime'],
+                                                                                                   sample_start=A1_Merged['SampleDetectTime'],
+                                                                                                   calDelimit_input=calDelimit,
+                                                                                                   cal_window_size_input=cal_window_size,
+                                                                                                   sampleDelimit_input=sampleDelimit,
+                                                                                                   sample_window_size_input=sample_window_size)
 A1_Merged['cal_window_start']=cal_window_start
 A1_Merged['cal_window_end']=cal_window_end
 A1_Merged['sample_window_start']=sample_window_start
 A1_Merged['sample_window_end']=sample_window_end
 
-# For sensor A in system 2
+# Sensor A System 2
+calDelimit = 9.6
+cal_window_size = 8
+sampleDelimit = 17.2
+sample_window_size = 5
+
 cal_window_start, cal_window_end, sample_window_start, sample_window_end = calculate_window_values(bubble_start=A2_Merged['BubbleDetectTime'],
                                                                                                    sample_start=A2_Merged['SampleDetectTime'],
-                                                                                                   calDelimit = calDelimit,
-                                                                                                   cal_window_size = cal_window_size,
-                                                                                                   sampleDelimit = sampleDelimit,
-                                                                                                   sample_window_size = sample_window_size)
+                                                                                                   calDelimit_input=calDelimit,
+                                                                                                   cal_window_size_input=cal_window_size,
+                                                                                                   sampleDelimit_input=sampleDelimit,
+                                                                                                   sample_window_size_input=sample_window_size)
 A2_Merged['cal_window_start']=cal_window_start
 A2_Merged['cal_window_end']=cal_window_end
 A2_Merged['sample_window_start']=sample_window_start
 A2_Merged['sample_window_end']=sample_window_end
 
-# Match window values of Sensor B for each test
+
+# sensor B
+
+# For sensor B in system 1, blood and aqueous
+
+calDelimit = 20
+cal_window_size = 18
+sampleDelimit_blood = 24
+sampleDelimit_aqueous = 30
+sample_window_size = 4
+
+B1_Merged['cal_window_start'], B1_Merged['cal_window_end'], \
+B1_Merged['sample_window_start'], B1_Merged['sample_window_end'] = zip(*B1_Merged.apply(
+    lambda row: calculate_window_values(
+        bubble_start=row['BubbleDetectTime'],
+        sample_start=row['SampleDetectTime'],
+        calDelimit_input=calDelimit,
+        cal_window_size_input=cal_window_size,
+        sampleDelimit_input=sampleDelimit_aqueous if row['FluidType'].startswith('Eurotrol') else sampleDelimit_blood,
+        sample_window_size_input=sample_window_size
+    ),
+    axis=1
+))
+
+# For sensor B in system 2, blood and aqueous
+
 calDelimit = 18
 cal_window_size = 18
 sampleDelimit_blood = 30.4
 sampleDelimit_aqueous = 32.8
 sample_window_size = 4
 
-# For sensor B in system 1, blood and aqueous
-B1_Merged['cal_window_start'], B1_Merged['cal_window_end'], \
-B1_Merged['sample_window_start'], B1_Merged['sample_window_end'] = zip(*B1_Merged.apply(
-    lambda row: calculate_window_values(
-        bubble_start=row['BubbleDetectTime'],
-        sample_start=row['SampleDetectTime'],
-        calDelimit=calDelimit,
-        cal_window_size=cal_window_size,
-        sampleDelimit=sampleDelimit_aqueous if row['FluidType'].startswith('Eurotrol') else sampleDelimit_blood,
-        sample_window_size=sample_window_size
-    ),
-    axis=1
-))
-
-# For sensor B in system 2, blood and aqueous
 B2_Merged['cal_window_start'], B2_Merged['cal_window_end'], \
 B2_Merged['sample_window_start'], B2_Merged['sample_window_end'] = zip(*B2_Merged.apply(
     lambda row: calculate_window_values(
         bubble_start=row['BubbleDetectTime'],
         sample_start=row['SampleDetectTime'],
-        calDelimit=calDelimit,
-        cal_window_size=cal_window_size,
-        sampleDelimit=sampleDelimit_aqueous if row['FluidType'].startswith('Eurotrol') else sampleDelimit_blood,
-        sample_window_size=sample_window_size
+        calDelimit_input=calDelimit,
+        cal_window_size_input=cal_window_size,
+        sampleDelimit_input=sampleDelimit_aqueous if row['FluidType'].startswith('Eurotrol') else sampleDelimit_blood,
+        sample_window_size_input=sample_window_size
     ),
     axis=1
 ))
-# Define a function to extract window data of each test
-def calculate_window_data(row):
-    cal_start_time = row['cal_window_start']
-    cal_end_time = row['cal_window_end']
-    sample_start_time = row['sample_window_start']
-    sample_end_time = row['sample_window_end']
-    timestamps = row.index[18:-4].values.astype(float)
-    cal_window = timestamps[(timestamps >= cal_start_time) & (timestamps <= cal_end_time)]
-    sample_window = timestamps[(timestamps >= sample_start_time) & (timestamps <= sample_end_time)]
-    return row[cal_window],row[sample_window]
 
 # extract window data for sensor A in system 1
 A1_cal_window = []

@@ -558,7 +558,9 @@ def visualize_regression(fpca_s1, fpca_s2):
     summary1 = model1.summary()
     summary2 = model2.summary()
     slope1 = model1.params[1]
+    sed1 = model1.bse[1]
     slope2 = model2.params[1]
+    sed2 = model2.bse[1]
     print(summary1)
     print(summary2)
 
@@ -594,4 +596,4 @@ def visualize_regression(fpca_s1, fpca_s2):
     plt.ylabel("y")
     plt.legend()
     plt.show()
-    return slope1, slope2
+    return slope1, slope2, sed1, sed2

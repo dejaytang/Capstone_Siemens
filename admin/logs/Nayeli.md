@@ -74,7 +74,15 @@
 | 7 - Thu    | 13/06/2024      |      0.5         |  Coding | <ul><li> Updating windows titles and reorganizing files in the GitHub as peers suggestion. </li></ul>|
 | 7 - Thu    | 13/06/2024      |      0.2         |  Internal meeting | <ul><li> Presenting the flowchart for the pipeline for waveform characterization. </li></ul>|
 | 7 - Fri    | 14/06/2024      |      10.0        | Final Report | <ul><li> Writing all the results for FPCA, appendix, references, ammending Data section and including visualizations. </li></ul>|
-| 8 - Fri    | 15/06/2024      |      1.5         |  Final Report | <ul><li> Check partner's subsections and make some comments. </li></ul>|
-| 8 - Fri    | 15/06/2024      |      1.2         |  Internal meeting | <ul><li> Make suggestions about the organization for the final docs. </li></ul>|
+| 7 - Fri    | 15/06/2024      |      1.5         |  Final Report | <ul><li> Check partner's subsections and make some comments. </li></ul>|
+| 7 - Fri    | 15/06/2024      |      1.2         |  Internal meeting | <ul><li> Make suggestions about the organization for the final docs. </li></ul>|
+| 8 - Mon    | 18/06/2024      |      1.0         |  Activities matrix | <ul><li> Created an excel file with the assignment of task for this last week regarding final report, slide deck, executive summary and GitHub. </li></ul>|
+| 8 - Mon    | 18/06/2024      |      1.0         |  Final Report | <ul><li> Provide feedback to peers in the final report.  </li></ul>|
+| 8 - Tue    | 19/06/2024      |      0.5         |  GitHub | <ul><li> Upload team contract on GitHub repo. </li></ul>|
+| 8 - Tue    | 19/06/2024      |      6.0         |  Final Report | <ul><li> Amend section 4 Data from final report according to peers review. </li></ul> <ul><li> Wrote background including some literature review for FPCA. </li></ul> <ul><li> Added plots regarding FPCA in Appendices. </li></ul> <ul><li> Provide feedback to peers for improve the clarity of the report. </li></ul>|
+
+
+
+
 
 
