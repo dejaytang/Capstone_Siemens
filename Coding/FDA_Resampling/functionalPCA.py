@@ -1,5 +1,6 @@
 import pandas as pd
 import numpy as np
+from scipy.stats import t
 import matplotlib.pyplot as plt
 from skfda.representation.grid import FDataGrid
 from skfda.preprocessing.dim_reduction.projection import FPCA
@@ -370,26 +371,27 @@ def create_pc_scores_plots(pc_scores_s1, pc_scores_s2, features_s1, features_s2,
     # System 1
     if features == "FluidType":
         scatter_fluid_s1 = alt.Chart(data_s1).mark_circle().encode(
-        alt.X('PC1_Scores', title="Scores FPC1", scale=alt.Scale(domain=[min_x, max_x])),
-        alt.Y('PC2_Scores', title="Scores FPC2", scale=alt.Scale(domain=[min_y, max_y])),
-        color=alt.Color("FluidType", scale=alt.Scale(scheme='tableau10'), title="Fluid"),
-        tooltip=['TestID', 'PC1_Scores', 'PC2_Scores', alt.Tooltip("FluidType", title="Fluid Type")]
-    ).properties(
-        title='Fluid Type',
-        width=580,
-        height=280
-    )
+            alt.X('PC1_Scores', title="Scores FPC1", scale=alt.Scale(domain=[min_x, max_x])),
+            alt.Y('PC2_Scores', title="Scores FPC2", scale=alt.Scale(domain=[min_y, max_y])),
+            color=alt.Color("FluidType", scale=alt.Scale(scheme='category10'), title="Fluid"),  # Changed scheme
+            tooltip=['TestID', 'PC1_Scores', 'PC2_Scores', alt.Tooltip("FluidType", title="Fluid Type")]
+        ).properties(
+            title='Fluid Type',
+            width=580,
+            height=280
+        )
     else:
         scatter_fluid_s1 = alt.Chart(data_s1).mark_circle().encode(
-        alt.X('PC1_Scores', title="Scores FPC1", scale=alt.Scale(domain=[min_x, max_x])),
-        alt.Y('PC2_Scores', title="Scores FPC2", scale=alt.Scale(domain=[min_y, max_y])),
-        color=alt.Color("FluidTypeBin", scale=alt.Scale(scheme='tableau10'), title="Fluid"),
-        tooltip=['TestID', 'PC1_Scores', 'PC2_Scores', alt.Tooltip("FluidTypeBin", title="Fluid Type")]
-    ).properties(
-        title='Fluid Type',
-        width=580,
-        height=280
-    )
+            alt.X('PC1_Scores', title="Scores FPC1", scale=alt.Scale(domain=[min_x, max_x])),
+            alt.Y('PC2_Scores', title="Scores FPC2", scale=alt.Scale(domain=[min_y, max_y])),
+            color=alt.Color("FluidTypeBin", scale=alt.Scale(scheme='category10'), title="Fluid"),  # Changed scheme
+            tooltip=['TestID', 'PC1_Scores', 'PC2_Scores', alt.Tooltip("FluidTypeBin", title="Fluid Type")]
+        ).properties(
+            title='Fluid Type',
+            width=580,
+            height=280
+        )
+
     scatter_age_s1 = alt.Chart(data_s1).mark_circle().encode(
     alt.X('PC1_Scores', title="Scores FPC1", scale=alt.Scale(domain=[min_x, max_x])),
     alt.Y('PC2_Scores', title="Scores FPC2", scale=alt.Scale(domain=[min_y, max_y])),
@@ -416,27 +418,26 @@ def create_pc_scores_plots(pc_scores_s1, pc_scores_s2, features_s1, features_s2,
     # System 2
     if features == "FluidType":
         scatter_fluid_s2 = alt.Chart(data_s2).mark_circle().encode(
-        alt.X('PC1_Scores', title="Scores FPC1", scale=alt.Scale(domain=[min_x, max_x])),
-        alt.Y('PC2_Scores', title="Scores FPC2", scale=alt.Scale(domain=[min_y, max_y])),
-        color=alt.Color("FluidType", scale=alt.Scale(scheme='tableau10'), title="Fluid"),
-        tooltip=['TestID', 'PC1_Scores', 'PC2_Scores', alt.Tooltip("FluidType", title="Fluid Type")]
-    ).properties(
-        title='Fluid Type',
-        width=580,
-        height=280
-    )
+            alt.X('PC1_Scores', title="Scores FPC1", scale=alt.Scale(domain=[min_x, max_x])),
+            alt.Y('PC2_Scores', title="Scores FPC2", scale=alt.Scale(domain=[min_y, max_y])),
+            color=alt.Color("FluidType", scale=alt.Scale(scheme='category10'), title="Fluid"),  # Changed scheme
+            tooltip=['TestID', 'PC1_Scores', 'PC2_Scores', alt.Tooltip("FluidType", title="Fluid Type")]
+        ).properties(
+            title='Fluid Type',
+            width=580,
+            height=280
+        )
     else:
         scatter_fluid_s2 = alt.Chart(data_s2).mark_circle().encode(
-        alt.X('PC1_Scores', title="Scores FPC1", scale=alt.Scale(domain=[min_x, max_x])),
-        alt.Y('PC2_Scores', title="Scores FPC2", scale=alt.Scale(domain=[min_y, max_y])),
-        color=alt.Color("FluidTypeBin", scale=alt.Scale(scheme='tableau10'), title="Fluid"),
-        tooltip=['TestID', 'PC1_Scores', 'PC2_Scores', alt.Tooltip("FluidTypeBin", title="Fluid Type")]
-    ).properties(
-        title='Fluid Type',
-        width=580,
-        height=280
-    )
-
+            alt.X('PC1_Scores', title="Scores FPC1", scale=alt.Scale(domain=[min_x, max_x])),
+            alt.Y('PC2_Scores', title="Scores FPC2", scale=alt.Scale(domain=[min_y, max_y])),
+            color=alt.Color("FluidTypeBin", scale=alt.Scale(scheme='category10'), title="Fluid"),  # Changed scheme
+            tooltip=['TestID', 'PC1_Scores', 'PC2_Scores', alt.Tooltip("FluidTypeBin", title="Fluid Type")]
+        ).properties(
+            title='Fluid Type',
+            width=580,
+            height=280
+        )
     scatter_age_s2 = alt.Chart(data_s2).mark_circle().encode(
         alt.X('PC1_Scores', title="Scores FPC1", scale=alt.Scale(domain=[min_x, max_x])),
         alt.Y('PC2_Scores', title="Scores FPC2", scale=alt.Scale(domain=[min_y, max_y])),
@@ -537,14 +538,20 @@ def visualize_regression(fpca_s1, fpca_s2):
     tuple: A tuple containing:
            - Slope of the regression line for system 1.
            - Slope of the regression line for system 2.
+           - Standard error of the slope for system 1.
+           - Standard error of the slope for system 2.
+           - Number of data points in system 1 & 2 if they are the same.
+           - p-value for the hypothesis test comparing the slopes of the two systems.
     """
     # Extract grid points and data values for both sets of data
     x1 = fpca_s1.grid_points[0]
     y1 = fpca_s1.data_matrix[0].flatten()
     x2 = fpca_s2.grid_points[0]
     y2 = fpca_s2.data_matrix[0].flatten()
-
-    # Add a constant to the feature variables
+    n1 = len(x1)
+    n2 = len(x2)
+    
+    # Add a constant to the feature variables for both datasets
     x1_with_const = sm.add_constant(x1)
     x2_with_const = sm.add_constant(x2)
 
@@ -558,17 +565,22 @@ def visualize_regression(fpca_s1, fpca_s2):
     summary1 = model1.summary()
     summary2 = model2.summary()
     slope1 = model1.params[1]
-    sed1 = model1.bse[1]
+    se1 = model1.bse[1]
     slope2 = model2.params[1]
-    sed2 = model2.bse[1]
+    se2 = model2.bse[1]
     print(summary1)
     print(summary2)
 
+    # Hypothesis test -- t-test
+    t_stat = (slope1 - slope2) / np.sqrt(se1**2 + se2**2)
+    df = (n1 + n2) - 2
+    p_value = round(2 * (1 - t.cdf(np.abs(t_stat), df)), 2)
+    
     # Extract predicted values from the models
     y1_pred = model1.predict(x1_with_const)
     y2_pred = model2.predict(x2_with_const)
 
-    # Compute confidence intervals
+    # Compute confidence intervals for predictions
     pred1 = model1.get_prediction(x1_with_const)
     pred_summary1 = pred1.summary_frame(alpha=0.05)  # 95% confidence interval
     ci_lower1 = pred_summary1['obs_ci_lower']
@@ -596,4 +608,6 @@ def visualize_regression(fpca_s1, fpca_s2):
     plt.ylabel("y")
     plt.legend()
     plt.show()
-    return slope1, slope2, sed1, sed2
+
+    return slope1, slope2, se1, se2, n1, p_value
+
