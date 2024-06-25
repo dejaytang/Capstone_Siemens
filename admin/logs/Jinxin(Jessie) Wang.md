@@ -71,3 +71,7 @@
 |  8         | 21/06/2024      |      2      | Internal Meeting |<ul><li> Discuss about the final report draft</li></ul><ul><li>plan for the remaining task</li></ul><ul><li>discuss about the presentation distribution
 |  8         | 21/06/2024      |      0.5      | Meeting with Client |<ul><li> Discuss about the findings after appling the new window limits
 |  8         | 22/06/2024      |      3.5      | Individual Work |<ul><li> updates the codes for the python files of raw slope with new limits</li></ul><ul><li>prepare the slide deck for final presentation
+|  8         | 23/06/2024      |      4      | Individual Work |<ul><li>amending the slides for final presentation</li></ul><ul><li>practice for the final presentation</li></ul><ul><li>drafting executive summary
+|  8         | 23/06/2024      |      2      | Internal Meeting |<ul><li>went over the slides for modification
+|  8         | 24/06/2024      |      2      | Internal Meeting |<ul><li>Rehearsal for the presentation and modifing the slides
+|  8         | 24/06/2024      |      3.75      | Individual Work |<ul><li>Practice for the final presentation</li></ul><ul><li>went through the comments from peer for the final report draft
