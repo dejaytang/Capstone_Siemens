@@ -80,8 +80,10 @@
 | 8 - Mon    | 18/06/2024      |      1.0         |  Final Report | <ul><li> Provide feedback to peers in the final report.  </li></ul>|
 | 8 - Tue    | 19/06/2024      |      0.5         |  GitHub | <ul><li> Upload team contract on GitHub repo. </li></ul>|
 | 8 - Tue    | 19/06/2024      |      6.0         |  Final Report | <ul><li> Amend section 4 Data from final report according to peers review. </li></ul> <ul><li> Wrote background including some literature review for FPCA. </li></ul> <ul><li> Added plots regarding FPCA in Appendices. </li></ul> <ul><li> Provide feedback to peers for improve the clarity of the report. </li></ul>|
-
-
+| 8 - Wed    | 19/06/2024      |      1.0         |  Final Report | <ul><li> Provide feedback to peers about the content of some sections for improving clarity. </li></ul>|
+| 8 - Thu    | 19/06/2024      |      1.0         |  Final Report | <ul><li>  Check peers feedback and modify the content of some sections for improving clarity. </li></ul> |
+| 8 - Fri    | 19/06/2024      |      3.0         |  Final Report & Slide deck | <ul><li> Check peers feedback and modify the content of some sections for improving clarity. </li></ul> <ul><li>  Preparing 5 slides for the slide deck for final presentation. </li></ul>|
+| 9 - Mon    | 24/06/2024      |      2.0         |  Internal meeting | <ul><li> Groupal meeting for enhance presentation and rehearsal. </li></ul>|
 
 
 
