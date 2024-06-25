@@ -364,3 +364,51 @@
 - Activity Type: Working on git repo files
 - Description: 
     - Modified readme.md for window_optimization file
+
+## W8 Thursday 2024/6/20
+- Time (hours): 3
+- Activity Type: Writing report
+- Description: 
+    - Writing the optimization part of the report 
+
+## W8 Thursday 2024/6/20
+- Time (hours): 2
+- Activity Type: Internal meeting
+- Description: 
+    - Discussed report and final presentation
+
+## W8 Friday 2024/6/21
+- Time (hours): 0.5
+- Activity Type: Meeting with Siemens
+- Description: 
+    - Shared our findings for FPCA and slope results with new window limits
+
+## W8 Saturday 2024/6/22
+- Time (hours): 2
+- Activity Type: Slide decks
+- Description: 
+    - Modified slide decks on conclusions, future work and acknowledgment
+
+## W8 Sunday 2024/6/23
+- Time (hours): 2
+- Activity Type: Arranging codes
+- Description: 
+    - Arranging codes for Siemens' requirements
+
+## W8 Sunday 2024/6/23
+- Time (hours): 2
+- Activity Type: Internal Meeting
+- Description: 
+    - Modified slide decks and rehearsaled presentation
+
+## W9 Monday 2024/6/24
+- Time (hours): 3
+- Activity Type: Internal Meeting
+- Description: 
+    - Rehearsaled presentation
+
+## W9 Monday 2024/6/24
+- Time (hours): 2
+- Activity Type: Writing report
+- Description: 
+    - Modified report
