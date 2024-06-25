@@ -8,12 +8,13 @@
 
 **Summary of Methods:**
 
-- Waveform Characterization:
+**Waveform Characterization:**
    
-Window Flatness Evaluation: Assessed the flatness of the calibration and sample windows by calculating slope coefficients for various attributes (fluid temperature, fluid type, and card age). Differences in slope between System 1 and System 2 were quantified using two-tailed t-tests.
-Functional Data Analysis (FDA): Used Functional Principal Component Analysis (FPCA) to compare the main modes of variation in waveform data produced from each system by using the first principal component (FPC1) that captures the majority of the data's variability and characterizing the waveforms using the principal component scores. Additionally, Functional Regression was used to assess the influence of external factors on the waveforms, such as the fluid temperature.
+- *Window Flatness Evaluation:* Assessed the flatness of the calibration and sample windows by calculating slope coefficients for various attributes (fluid temperature, fluid type, and card age). Differences in slope between System 1 and System 2 were quantified using two-tailed t-tests.
+  
+- *Functional Data Analysis (FDA):* Used Functional Principal Component Analysis (FPCA) to compare the main modes of variation in waveform data produced from each system by using the first principal component (FPC1) that captures the majority of the data's variability and characterizing the waveforms using the principal component scores. Additionally, Functional Regression was used to assess the influence of external factors on the waveforms, such as the fluid temperature.
 
-- Window Optimization:
+**Window Optimization:**
    
 Optimized the calibration and sample windows for System 2 by adjusting delimit values to minimize slope differences between System 1 and System 2. This involved looping through possible delimit values and comparing the results to the previously defined delimit values.
 
