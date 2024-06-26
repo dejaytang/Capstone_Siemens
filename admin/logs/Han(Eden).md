@@ -584,3 +584,100 @@
 		- Correct the code for the typo
 	- Document
 		- Write methodology
+----------------------------------------
+
+## W8 Monday 2024/6/17
+- Time (hours): 4
+- Activity Type: 
+	- Document
+	- Meeting
+- Description: 
+	- Document
+		- Finish methodology
+	- Internal Meeting
+		- Discuss some issue 
+
+## W8 Tuesday 2024/6/18
+- Time (hours): 3
+- Activity Type: 
+	- Meeting
+	- Code
+	- Document
+- Description: 
+	-Code
+		- Correct the code for the typo
+	- Instructor Meeting
+		- Weekly presentation
+
+## W8 Wednesday 2024/6/19
+- Time (hours): 2
+- Activity Type: 
+	- Document
+- Description: 
+	-Code
+		- Correct the code for the typo
+	- Meeting
+		- Write more for methodology
+
+## W8 Thursday 2024/6/20
+- Time (hours): 6
+- Activity Type: 
+	- Document
+	- Meeting
+- Description: 
+	- Document
+		- Finish the final proposal 
+		- Amend by teammates' feedback
+	- Internal Meeting
+		- Go through all the result and problems in the document
+		- Schedule the timeline for the next step
+	
+## W8 Friday 2024/6/21
+- Time (hours): 6
+- Activity Type: 
+	- Slides
+	- Meeting
+	- Preparation
+- Description: 
+	- Slides
+		- Add content to the slide
+	- Sub-group Meeting
+		- Discuss the structure of the slide
+	- Clients meeting
+		- Discuss the latest result
+	- Preparation
+		- Watch last year presentation to find the possible questions
+	
+## W8 Saturday 2024/6/22
+- Time (hours): 3
+- Activity Type: 
+	- Code
+	- Slides
+- Description: 
+	-Code
+		- Correct the code for the typo
+	- Slides
+		- Finish the slides
+
+## W8 Sunday 2024/6/23
+- Time (hours): 2
+- Activity Type: 
+	- Rehearsal
+- Description: 
+	- Rehearsal online
+
+## W9 Monday 2024/6/24
+- Time (hours): 5
+- Activity Type: 
+	- Rehearsal 
+	- Document
+- Description: 
+	- Rehearsal in person
+	- Document
+		- Amend the final report
+		- 
+## W9 Tuesday 2024/6/25
+- Time (hours): 7
+- Description: 
+	- Final Presentation
+	- Final Report

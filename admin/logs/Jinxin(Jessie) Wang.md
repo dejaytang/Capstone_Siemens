@@ -75,3 +75,4 @@
 |  8         | 23/06/2024      |      2      | Internal Meeting |<ul><li>went over the slides for modification
 |  8         | 24/06/2024      |      2      | Internal Meeting |<ul><li>Rehearsal for the presentation and modifing the slides
 |  8         | 24/06/2024      |      3.75      | Individual Work |<ul><li>Practice for the final presentation</li></ul><ul><li>went through the comments from peer for the final report draft
+|  8         | 25/06/2024      |      6.5      | Final Presentation |<ul><li>Participating the final presentation event
