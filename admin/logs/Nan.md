@@ -412,3 +412,15 @@
 - Activity Type: Writing report
 - Description: 
     - Modified report
+
+## W9 Tuesday 2024/6/25
+- Time (hours): 6
+- Activity Type: Final presentation
+- Description: 
+    - Did final presentation
+
+## W9 Tuesday 2024/6/25
+- Time (hours): 3
+- Activity Type: Writing report
+- Description: 
+    - Modified report
