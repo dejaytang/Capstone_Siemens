@@ -20,8 +20,13 @@ Optimized the calibration and sample windows for System 2 by adjusting delimit v
 
 **Summary of Results:**
 
-Waveform Characterization:  System 2 showed consistently higher slopes in sensor readings relative to System 1. FPCA revealed that the primary mode of variation captured over 99% of the data's variability. System 2's calibration and sample windows are generally steeper than those for System 2.
-Window Optimization: The new optimized window limits for System 2 resulted in minimized slope differences, especially for fluid types Eurotrol L4, NB, and SB-3, and test cards aged 56 to 84 days.
+Waveform Characterization:  
+- System 2 showed consistently higher slopes in sensor readings relative to System 1.
+- FPCA revealed that the primary mode of variation captured over 99% of the data's variability.
+- System 2's calibration and sample windows are generally steeper than those for System 2.
+  
+Window Optimization:
+- The new optimized window limits for System 2 resulted in minimized slope differences, especially for fluid types Eurotrol L4, NB, and SB-3, and test cards aged 56 to 84 days.
 
 
 
